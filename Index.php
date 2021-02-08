@@ -213,7 +213,7 @@
 
 														</p>
 
-														<a class="button button--reversed" href="Courses.html">Find a Course</a><!--http://recoverycollegeedmonton.ca/courses/-->
+														<a class="button button--reversed" href="Courses.php">Find a Course</a><!--http://recoverycollegeedmonton.ca/courses/-->
 													</div>
 
 
@@ -282,7 +282,7 @@
 
 													<div class="col-12">
 														<h2>Find an online class here. </h2>
-														<p class="big">Register for an online virtual course or get more information in our  <a href="Courses.html">course catalogue</a>.</p><!--http://recoverycollegeedmonton.ca/courses-->
+														<p class="big">Register for an online virtual course or get more information in our  <a href="Courses.php">course catalogue</a>.</p><!--http://recoverycollegeedmonton.ca/courses-->
 													</div>
 
 
@@ -531,7 +531,7 @@
 
 														<h3 class="title-2">Develop your own resourcefulness</h3>
 
-														<a href="Courses.html" title="Find a Course" class="button button--reversed">Find a Course</a><!--http://recoverycollegeedmonton.ca/courses/-->
+														<a href="Courses.php" title="Find a Course" class="button button--reversed">Find a Course</a><!--http://recoverycollegeedmonton.ca/courses/-->
 
 													</div>
 												</div>
@@ -574,9 +574,9 @@
 
 													<ul id="menu-footer-menu" class="menu">
 														<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-27 nav-item">
-															<a title="Find a Course" href="Courses.html" class="nav-link">Find a Course</a>
+															<a title="Find a Course" href="Courses.php" class="nav-link">Find a Course</a>
 															<ul role="menu">
-																<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28 nav-item"><a title="All Courses" href="Courses.html" class="dropdown-item">All Courses</a></li>
+																<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28 nav-item"><a title="All Courses" href="Courses.php" class="dropdown-item">All Courses</a></li>
 																<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29 nav-item"><a title="Calendar" href="CALENDARPAGEPLACEHOLDER" class="dropdown-item">Calendar</a></li>
 															</ul>
 														</li>

@@ -656,13 +656,13 @@
 
 													<div class="col-12 col-sm-4 col-md-6">
 
-														<span class="footer-meta-item"><a href="Privacy.html">Privacy Page</a></span><!--https://recoverycollegeedmonton.ca/privacy-policy/-->
+														<span class="footer-meta-item"><a href="Privacy.php">Privacy Page</a></span><!--https://recoverycollegeedmonton.ca/privacy-policy/-->
 														<span class="footer-meta-sep">|</span>
 
-														<span class="footer-meta-item"><a href="Terms.html">Terms of Use</a></span><!--https://recoverycollegeedmonton.ca/terms-conditions/-->
+														<span class="footer-meta-item"><a href="TermsConditions.php">Terms of Use</a></span><!--https://recoverycollegeedmonton.ca/terms-conditions/-->
 														<span class="footer-meta-sep">|</span>
 
-														<span class="footer-meta-item"><a href="copyright-permissions.html">Copyright &amp; Permissions</a></span><!--https://recoverycollegeedmonton.ca/copyright-permissions/-->
+														<span class="footer-meta-item"><a href="CopyrightPermissions.php">Copyright &amp; Permissions</a></span><!--https://recoverycollegeedmonton.ca/copyright-permissions/-->
 
 													</div>
 
@@ -713,7 +713,7 @@
 
 														<field-group>
 															<input type="checkbox" id="waitlist-consent-checkbox" name="consent" required="">
-															<label for="waitlist-consent-checkbox">I agree with and accept the <a class="link" href="Privacy.html" target="_blank">Privacy Policy</a>.</label>
+															<label for="waitlist-consent-checkbox">I agree with and accept the <a class="link" href="Privacy.php" target="_blank">Privacy Policy</a>.</label>
 														</field-group>
 													</form>
 												</div>

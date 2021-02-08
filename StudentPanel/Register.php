@@ -216,7 +216,7 @@ The content from cdnjs.cloudflare.com is all open source -->
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-default" value="Reset">
             </div>
-            <p>Already have an account? <a href="login.php">Login here</a>.</p>
+            <p>Already have an account? <a href="StudentLogin.php">Login here</a>.</p>
         </form>
     </div>    
 

@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en-CA" class=""><head>
 
 	<!-- End Google Tag Manager -->

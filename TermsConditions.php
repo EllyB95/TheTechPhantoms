@@ -1,13 +1,4 @@
-<?php session_start();
-	if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true)
-	{
-    	$LoginLogoutButton = '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Logout" href="LoginRegistrationPages\logout.php" class="nav-link">Logout</a></li>';      
-    }
-    else
-    {
-        $LoginLogoutButton = '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Login" href="LoginRegistrationPages\login.php" class="nav-link">Login</a></li>';                                        
-    }                            
-?>
+
 <!DOCTYPE html>
 <html lang="en-CA" class="no-js">
 <head>

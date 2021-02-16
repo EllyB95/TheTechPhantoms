@@ -98,7 +98,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 	
 	<div class="sitewide-banner" data-modified="1588200144">
 		<div class="sitewide-banner-container">
-			<h4>CMHA Recovery College classes are now being offered online.</h4><a href="COURSESONLINEPLACEHOLDER" class="button">Register here.</a>		</div>
+			<h4>CMHA Recovery College classes are now being offered online.</h4><a href="StudentPanel/Register.php" class="button">Register here.</a>		</div>
 
 		<i class="icon ion-md-close hide-banner"></i>
 	</div>
@@ -116,7 +116,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 
 	<div class="navigation-wrapper">
 		<nav class="primary-nav">
-			<ul id="menu-main-menu" class="menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22 nav-item"><a title="About Recovery College" href="ABOUTPAGEPLACEHOLDER" class="nav-link">About Recovery College</a></li>
+			<ul id="menu-main-menu" class="menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22 nav-item"><a title="About Recovery College" href="About.php" class="nav-link">About Recovery College</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-23 nav-item"><a title="Find a Course" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-23">Find a Course</a>
 <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-23" role="menu">
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24 nav-item"><a title="All Courses" href="COURSESALLPLACEHOLDER" class="dropdown-item">All Courses</a></li>
@@ -128,14 +128,14 @@ The content from cdnjs.cloudflare.com is all open source -->
 </ul>		</nav>
 
 		<div class="brand brand--desktop d-none d-md-block">
-							<a href="HOMEPAGEPLACEHOLDER" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
+							<a href="Index.php" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
 					<img src="images/svg/RC_Edmonton_Logo.svg" alt="Recovery College Edmonton">
 				</a>
 					</div>
 
 		<nav class="utility-nav">
 			<div class="searchform-wrapper">
-				<form class="searchform" method="get" action="HOMEPAGEPLACEHOLDER">
+				<form class="searchform" method="get" action="Index.php">
 	<input type="text" name="s" aria-label="Site search" placeholder="What are you looking for?" />
 	<button aria-labelledby="searchform--5f9a14c726cb8__label"><i class="ion ion-md-search"></i><span class="text" id="searchform--5f9a14c726cb8__label">Search</span></button>
 </form>

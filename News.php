@@ -516,13 +516,13 @@ The content from cdnjs.cloudflare.com is all open source -->
 
 					<div class="col-12 col-sm-4 col-md-6">
 						
-													<span class="footer-meta-item"><a href="Privacy.html">Privacy Page</a></span>
+													<span class="footer-meta-item"><a href="Privacy.php">Privacy Page</a></span>
 							<span class="footer-meta-sep">|</span>
 						
-													<span class="footer-meta-item"><a href="Terms.html">Terms of Use</a></span>
+													<span class="footer-meta-item"><a href="TermsConditions.php">Terms of Use</a></span>
 							<span class="footer-meta-sep">|</span>
 						
-													<span class="footer-meta-item"><a href="copyright-permissions.html">Copyright &amp; Permissions</a></span>
+													<span class="footer-meta-item"><a href="CopyrightPermissions.php">Copyright &amp; Permissions</a></span>
 						
 					</div>
 

@@ -180,22 +180,12 @@
 												</div>
 
 												<nav class="utility-nav">
-													<div class="searchform-wrapper">
-														<form class="searchform" method="get" action="#">
-															<!--https://recoverycollegeedmonton.ca/-->
-															<input type="text" name="s" aria-label="Site search" placeholder="What are you looking for?">
-															<button aria-labelledby="searchform--5f9870a909a7a__label"><span class="iconify" data-icon="bx:bx-search" data-inline="false" ></span><span class="text" id="searchform--5f9870a909a7a__label">Search</span></button>
-														</form>
-														<button class="searchform-toggle" aria-label="Search the site"><span class="iconify" data-icon="bx:bx-search" data-inline="false" ></span></button>
-													</div>
+													
 													<ul id="menu-utility-menu" class="menu">
 														<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19 nav-item"><a title="News &amp; Updates" href="news.html" class="nav-link">News &amp; Updates</a></li>
 														<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20 nav-item"><a title="Donate" target="_blank" href="https://edmonton.cmha.ca/get-involved/donate/" class="nav-link">Donate</a></li>
-														<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="FAQs" href="FAQPLACEHOLDER" class="nav-link">FAQs</a></li>
+														<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="FAQs" href="Faq.php" class="nav-link">FAQs</a></li>
 														<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Contact" href="Contact.php" class="nav-link">Contact</a></li>
-														<?php
-															echo $LoginLogoutButton;
-														?>
 													</ul>
 												</nav>
 											</div>
@@ -343,7 +333,7 @@
 															<div class="tags" data-filter-target="" data-tags="online"></div>
 															<div class="card__header">
 																<div class="card__title title-4 tribe-events-single-event-title">Developing Self Compassion: Online</div>		<div class="tag-wrapper">
-																	<a href="COURSESONLINEPLACEHOLDER" class="tag tag--online" title="View courses for Online">Online</a><!--https://recoverycollegeedmonton.ca/courses/?filter=online-->
+																	<a href="Courses.php" class="tag tag--online" title="View courses for Online">Online</a><!--https://recoverycollegeedmonton.ca/courses/?filter=online-->
 
 																</div>
 															</div>
@@ -574,17 +564,12 @@
 
 													<ul id="menu-footer-menu" class="menu">
 														<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-27 nav-item">
-															<a title="Find a Course" href="Courses.php" class="nav-link">Find a Course</a>
-															<ul role="menu">
-																<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28 nav-item"><a title="All Courses" href="Courses.php" class="dropdown-item">All Courses</a></li>
-																<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29 nav-item"><a title="Calendar" href="CALENDARPAGEPLACEHOLDER" class="dropdown-item">Calendar</a></li>
-															</ul>
-														</li>
+															<a title="Find a Course" href="Courses.php" class="nav-link">Find a Course</a></li>
 														<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-31 nav-item">
 															<a title="Get Help" href="#" class="nav-link">Get Help</a>
 															<ul role="menu">
 																<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32 nav-item"><a title="News &amp; Updates" href="news.html" class="dropdown-item">News &amp; Updates</a></li>
-																<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 nav-item"><a title="FAQs" href="FAQPLACEHOLDER" class="dropdown-item">FAQs</a></li>
+																<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 nav-item"><a title="FAQs" href="Faq.php" class="dropdown-item">FAQs</a></li>
 															</ul>
 														</li>
 														<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-402 nav-item"><a title="Contact Us" href="Contact.php" class="nav-link">Contact Us</a><ul role="menu" aria-role="menu"><li class="nav-item" aria-role="menuitem">300, 10010-105 St NW<br>Edmonton, AB T5J 1C4</li><li class="nav-item" aria-role="menuitem">780-414-6300</li></ul></li>

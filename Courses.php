@@ -64,9 +64,10 @@ The content from cdnjs.cloudflare.com is all open source -->
 		<div id="content" class="site-content">
 
 		
+   <!-- Cart. Icon on the right of the page... need to tweak icon -->
     <div class="cart-button-outer">
         <div class="cart-button-quantity"></div>
-        <button id="cart-toggle" class="button-cart" aria-label="Hide / Show Cart"></button>
+        <button id="cart-toggle" class="button-cart" aria-label="Hide / Show Cart"><img src="images/svg/cart.svg" alt="Cart"></button>
     </div>
 
     <div id="cart">
@@ -131,20 +132,12 @@ The content from cdnjs.cloudflare.com is all open source -->
 					</div>
 
 		<nav class="utility-nav">
-			<div class="searchform-wrapper">
-				<form class="searchform" method="get" action="HomePage.html">
-	<input type="text" name="s" aria-label="Site search" placeholder="What are you looking for?" />
-	<button aria-labelledby="searchform--5f7bb68b171df__label"><i class="ion ion-md-search"></i><span class="text" id="searchform--5f7bb68b171df__label">Search</span></button>
-</form>
-				<button class="searchform-toggle" aria-label="Search the site"><i class="ion ion-md-search"></i></button>
-			</div>
+			
 			<ul id="menu-utility-menu" class="menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19 nav-item"><a title="News &amp; Updates" href="news.html" class="nav-link">News &#038; Updates</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20 nav-item"><a title="Donate" target="_blank" href="https://edmonton.cmha.ca/get-involved/donate/" class="nav-link">Donate</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="FAQs" href="FAQPLACEHOLDER" class="nav-link">FAQs</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="FAQs" href="Faq.php" class="nav-link">FAQs</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Contact" href="Contact.php" class="nav-link">Contact</a></li>
-<?php
-                                                            echo $LoginLogoutButton;
-                                                        ?>
+
 </ul>		</nav>
 	</div>
 </div>
@@ -159,29 +152,7 @@ The content from cdnjs.cloudflare.com is all open source -->
     </div>
 </div>
 
-
-
-
-<!-- Filter section -->
-
-<section class="intro intro-filters">
-    <div class="brush-stroke brush-stroke-top" style="background-image: url(images/svg/white-top.svg);"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 filter-container" id="filters">
-                <span class="filter-title">
-                    <h5 class="title-5">Filter by Group</h5> 
-                    <span class="filter filter--drop-in filter--invisible">Clear Filters <i class="ion ion-md-close"></i></span>
-                </span>
-                <div class="filters" id="tag-filters">
-                    <span class="filter filter--online" data-slug="online" title="Courses for Online">Online</span>
-                </div>                
-            </div>
-        </div>
-    </div>    
-    <div class="brush-stroke brush-stroke-bottom" style="background-image: url(images/svg/white-top.svg);"></div>                
-</section>
-
+<div class="brush-stroke brush-stroke-bottom" style="background-image: url(images/svg/white-top.svg);"></div>                
 
 
 <!-- Course "cards" are below -->
@@ -270,7 +241,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 				<p>CMHA Recovery College classes will be offered online only during this time. Register here.</p>
 			</div>
 			<div class="modal-footer">
-							<button type="button" class="modal-close" data-dismiss="modal" data-target='COURSESONLINEPLACEHOLDER'>View Online Classes</button>
+							<button type="button" class="modal-close" data-dismiss="modal" data-target='Courses.php'>View Online Classes</button>
 			</div>
 			</div>
 		</div>
@@ -284,23 +255,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="footer-nav col-6 d-none d-md-block">
 
 <ul id="menu-footer-menu" class="menu">
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-27 nav-item"><a title="Find a Course" href="#" class="nav-link">Find a Course</a>
-    <ul  role="menu">
-    	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28 nav-item"><a title="All Courses" href="Courses.html" class="dropdown-item">All Courses</a>
-        </li>
-    	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29 nav-item"><a title="Calendar" href="CALENDARPAGEPLACEHOLDER" class="dropdown-item">Calendar</a>
-        </li>
-    </ul>
-    </li>
+    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-27 nav-item"><a title="Find a Course" href="Courses.php" class="nav-link">Find a Course</a> </li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-31 nav-item"><a title="Get Help" href="#" class="nav-link">Get Help</a>
     <ul  role="menu">
     	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32 nav-item"><a title="News &amp; Updates" href="news.html" class="dropdown-item">News &#038; Updates</a>
         </li>
-    	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 nav-item"><a title="FAQs" href="FAQPLACEHOLDER" class="dropdown-item">FAQs</a>
+    	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 nav-item"><a title="FAQs" href="Faq.php" class="dropdown-item">FAQs</a>
         </li>
     </ul>
 </li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-402 nav-item"><a title="Contact Us" href="#" class="nav-link">Contact Us</a>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-402 nav-item"><a title="Contact Us" href="Contact.php" class="nav-link">Contact Us</a>
     <ul role="menu" aria-role="menu"><li class="nav-item" aria-role="menuitem">300, 10010-105 St NW<br/>Edmonton, AB T5J 1C4</li>
         <li class="nav-item" aria-role="menuitem">780-414-6300</li>
     </ul>
@@ -357,11 +321,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 			<div class="footer-meta">
 				<div class="row">
 					<div class="col-12 col-sm-4 col-md-6">
-						<span class="footer-meta-item"><a href="Privacy.html">Privacy Page</a></span>
+						<span class="footer-meta-item"><a href="Privacy.php">Privacy Page</a></span>
 						<span class="footer-meta-sep">|</span>
-						<span class="footer-meta-item"><a href="Terms.html">Terms of Use</a></span>
+						<span class="footer-meta-item"><a href="TermsConditions.php">Terms of Use</a></span>
 						<span class="footer-meta-sep">|</span>
-						<span class="footer-meta-item"><a href="copyright-permissions.html">Copyright &amp; Permissions</a></span>				
+						<span class="footer-meta-item"><a href="CopyrightPermissions.php">Copyright &amp; Permissions</a></span>				
 					</div>
 					<div class="col-12 col-sm-8 col-md-6">
 						<span class="copy-registration"><span class="footer-meta-item">&copy; Recovery College Edmonton 2020, All Rights Reserved</span><span class="footer-meta-item">Registered Charity Number: 118834316RR</span></span>

@@ -69,6 +69,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 		<div id="content" class="site-content">
 
 		
+    <!-- Cart. Icon on the right of the page... need to tweak icon -->
     <div class="cart-button-outer">
         <div class="cart-button-quantity"></div>
         <button id="cart-toggle" class="button-cart" aria-label="Hide / Show Cart"><img src="images/svg/cart.svg" alt="Cart"></button>
@@ -136,20 +137,12 @@ The content from cdnjs.cloudflare.com is all open source -->
 					</div>
 
 		<nav class="utility-nav">
-			<div class="searchform-wrapper">
-				<form class="searchform" method="get" action="HomePage.html">
-	<input type="text" name="s" aria-label="Site search" placeholder="What are you looking for?" />
-	<button aria-labelledby="searchform--5fc135643fd80__label"><i class="ion ion-md-search"></i><span class="text" id="searchform--5fc135643fd80__label">Search</span></button>
-</form>
-				<button class="searchform-toggle" aria-label="Search the site"><i class="ion ion-md-search"></i></button>
-			</div>
+			
 			<ul id="menu-utility-menu" class="menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19 nav-item"><a title="News &amp; Updates" href="news.html" class="nav-link">News &#038; Updates</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20 nav-item"><a title="Donate" target="_blank" href="https://edmonton.cmha.ca/get-involved/donate/" class="nav-link">Donate</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="FAQs" href="FAQPLACEHOLDER" class="nav-link">FAQs</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="FAQs" href="Faq.php" class="nav-link">FAQs</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Contact" href="Contact.php" class="nav-link">Contact</a></li>
-<?php
-															echo $LoginLogoutButton;
-														?>
+
 </ul>		</nav>
 	</div>
 </div>
@@ -188,7 +181,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 				<div class="col-12 col-md-6">
 					<p><strong>Phone</strong> 780-414-6300 <br>
 <strong>Address</strong> 300, 10010-105 St NW, Edmonton, AB T5J 1C4<br>
-<strong>Email</strong> <a href="mailto:recoverycollege@cmha-edmonton.ab.ca">recoverycollege@cmha-edmonton.ab.ca</a></p>
+<strong>Email</strong><b>recoverycollege@cmha-edmonton.ab.ca</b></p>
 				</div>
 
 				
@@ -211,8 +204,8 @@ The content from cdnjs.cloudflare.com is all open source -->
 <p>At CMHA Recovery College, our educational-based approach focuses on helping people recognize and develop their own resourcefulness and awareness in order to support themselves or their loved one’s recovery journey. All of our courses are developed and delivered in partnership with our peer supporters who are experts by experience: they have their own story of a mental health or substance concern, or are supporting a loved one.</p>
 <p>Everyone is welcome to attend our free courses. No previous experience is required and with a variety of courses to choose from, there is something for everyone.</p>
 <p>Our CMHA Recovery College courses are interactive and create positive learning experiences, emphasizing connection, hope and belonging. An emphasis is placed on individual&#8217;s talents and strengths. Our courses inspire optimism, encourage students to consider future opportunities, and more people towards personal empowerment. Recovery is a journey, not a destination.</p>
-<p>You can find more information here: <a href="FAQPLACEHOLDER">Frequently Asked Questions</a></p>
-<p>If you have any further questions, do not hesitate to contact our Recovery College Coordinator at 780-414-6333 (direct line) or <a href="mailto:recoverycollege@cmha-edmonton.ab.ca" target="_blank" rel="noopener">recoverycollege@cmha-edmonton.ab.ca</a>. We look forward to connecting with  you.</p>
+<p>You can find more information here: <a href="Faq.php">Frequently Asked Questions</a></p>
+<p>If you have any further questions, do not hesitate to contact our Recovery College Coordinator at 780-414-6333 (direct line) or <b>recoverycollege@cmha-edmonton.ab.ca</b>. We look forward to connecting with  you.</p>
 <p>We are proud to work with many community partners, including:<br />
 Bissell Centre, County of Strathcona FCSS, The Family Centre, L.Y. Cairns, REACH Edmonton, and Stony Plain FCSS.  If your community organization would like to partner with us, please contact Gail Haynes (ghaynes@cmha-edmonton.ab.ca) or call 780-414-6300.</p>
 <p>&nbsp;</p>
@@ -656,7 +649,7 @@ Bissell Centre, County of Strathcona FCSS, The Family Centre, L.Y. Cairns, REACH
                     
                     <h3 class="title-2">Develop your own resourcefulness</h3>
 
-                                            <a href="Courses.html"
+                                            <a href="Courses.php"
                         title="Find a Course"
                                                 class="button button--reversed">Find a Course</a>
                     
@@ -680,19 +673,14 @@ Bissell Centre, County of Strathcona FCSS, The Family Centre, L.Y. Cairns, REACH
 
 				<div class="footer-nav col-6 d-none d-md-block">
 
-					<ul id="menu-footer-menu" class="menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-27 nav-item"><a title="Find a Course" href="#" class="nav-link">Find a Course</a>
-<ul  role="menu">
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28 nav-item"><a title="All Courses" href="Courses.html" class="dropdown-item">All Courses</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29 nav-item"><a title="Calendar" href="CALENDARPAGEPLACEHOLDER" class="dropdown-item">Calendar</a></li>
-</ul>
-</li>
+					<ul id="menu-footer-menu" class="menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-27 nav-item"><a title="Find a Course" href="Courses.php" class="nav-link">Find a Course</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-31 nav-item"><a title="Get Help" href="#" class="nav-link">Get Help</a>
 <ul  role="menu">
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32 nav-item"><a title="News &amp; Updates" href="news.html" class="dropdown-item">News &#038; Updates</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 nav-item"><a title="FAQs" href="FAQPLACEHOLDER" class="dropdown-item">FAQs</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 nav-item"><a title="FAQs" href="Faq.php" class="dropdown-item">FAQs</a></li>
 </ul>
 </li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-402 nav-item"><a title="Contact Us" href="#" class="nav-link">Contact Us</a><ul role="menu" aria-role="menu"><li class="nav-item" aria-role="menuitem">300, 10010-105 St NW<br/>Edmonton, AB T5J 1C4</li><li class="nav-item" aria-role="menuitem">780-414-6300</li></ul></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-402 nav-item"><a title="Contact Us" href="Contact.php" class="nav-link">Contact Us</a><ul role="menu" aria-role="menu"><li class="nav-item" aria-role="menuitem">300, 10010-105 St NW<br/>Edmonton, AB T5J 1C4</li><li class="nav-item" aria-role="menuitem">780-414-6300</li></ul></li>
 </ul>
 				</div>
 
@@ -758,13 +746,13 @@ Bissell Centre, County of Strathcona FCSS, The Family Centre, L.Y. Cairns, REACH
 
 					<div class="col-12 col-sm-4 col-md-6">
 						
-													<span class="footer-meta-item"><a href="privacy.html">Privacy Page</a></span>
+													<span class="footer-meta-item"><a href="Privacy.php">Privacy Page</a></span>
 							<span class="footer-meta-sep">|</span>
 						
-													<span class="footer-meta-item"><a href="Terms.html">Terms of Use</a></span>
+													<span class="footer-meta-item"><a href="TermsConditions.php">Terms of Use</a></span>
 							<span class="footer-meta-sep">|</span>
 						
-													<span class="footer-meta-item"><a href="copyright-permissions.html">Copyright &amp; Permissions</a></span>
+													<span class="footer-meta-item"><a href="CopyrightPermissions.php">Copyright &amp; Permissions</a></span>
 						
 					</div>
 

@@ -1,13 +1,4 @@
-<?php session_start();
-	if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true)
-	{
-    	$LoginLogoutButton = '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Logout" href="LoginRegistrationPages\logout.php" class="nav-link">Logout</a></li>';      
-    }
-    else
-    {
-        $LoginLogoutButton = '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Login" href="LoginRegistrationPages\login.php" class="nav-link">Login</a></li>';                                        
-    }                            
-?>
+
 <!DOCTYPE html>
 <html lang="en-CA" class="no-js">
 <head>
@@ -154,9 +145,6 @@ The content from cdnjs.cloudflare.com is all open source -->
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20 nav-item"><a title="Donate" target="_blank" href="DONATEPLACEHOLDER" class="nav-link">Donate</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="FAQs" href="Faq.php" class="nav-link">FAQs</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Contact" href="Contact.php" class="nav-link">Contact</a></li>
-<?php
-															echo $LoginLogoutButton;
-														?>
 </ul>		</nav>
 	</div>
 </div>

@@ -325,7 +325,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 							<span class="footer-meta-sep">|</span>						
 													<span class="footer-meta-item"><a href="../TermsConditions.php">Terms of Use</a></span>
 							<span class="footer-meta-sep">|</span>						
-													<span class="footer-meta-item"><a href="../CopyrightPermission.php">Copyright &amp; Permissions</a></span>	
+													<span class="footer-meta-item"><a href="../CopyrightPermissions.php">Copyright &amp; Permissions</a></span>	
 					</div>
 					<div class="col-12 col-sm-8 col-md-6">
 						<span class="copy-registration"><span class="footer-meta-item">&copy; Recovery College Edmonton 2020, All Rights Reserved</span><span class="footer-meta-item">Registered Charity Number: 118834316RR</span></span>

@@ -124,7 +124,7 @@
 </ul>		</nav>
 
 		<div class="brand brand--desktop d-none d-md-block">
-							<a href="../HomePage.html" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
+							<a href="../Index.php" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
 					<img src="../images/svg/RC_Edmonton_Logo.svg" alt="Recovery College Edmonton">
 				</a>
 					</div>

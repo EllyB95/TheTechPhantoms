@@ -114,7 +114,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 			<button class="menu-toggle button--primary" id="main-nav-toggle" aria-haspopup="true" aria-expanded="false"><span class="text">Menu</span> <span class="hamburger-bars"><span class="bar-helper"></span></span></button>
 		</div>
 		<div class="brand brand--mobile">
-							<a href="../HomePage.html" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
+							<a href="../Index.php" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
 					<img src="../images/svg/RC_Edmonton_Logo.svg" alt="Recovery College Edmonton">
 				</a>
 					</div>

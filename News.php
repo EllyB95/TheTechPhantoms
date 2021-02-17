@@ -205,7 +205,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 <div class="card news-card">
 
     
-        <a href="news/at-home-in-alberta-together.html" title="At Home in Alberta, Together">
+        <a href="news/AtHomeInAlberta.php" title="At Home in Alberta, Together">
         
     
         <div class="news-card-inner">
@@ -241,7 +241,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 <div class="card news-card">
 
     
-        <a href="news/mediaAndMentalHealth.html" title="A Matter of Media and Mental Health">
+        <a href="news/Media.php" title="A Matter of Media and Mental Health">
         
     
         <div class="news-card-inner">
@@ -277,7 +277,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 <div class="card news-card">
 
     
-        <a href="news/finding-connection-and-belonging.html" title="Finding Connection and Belonging">
+        <a href="news/FindingConnections.php" title="Finding Connection and Belonging">
         
     
         <div class="news-card-inner">
@@ -313,7 +313,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 <div class="card news-card">
 
     
-        <a href="news/helping_shape_with.html" title="Helping Shape the Mental Health Space &#8211; Then and Now">
+        <a href="news/HelpingShape.php" title="Helping Shape the Mental Health Space &#8211; Then and Now">
         
     
         <div class="news-card-inner">
@@ -349,7 +349,7 @@ The content from cdnjs.cloudflare.com is all open source -->
 <div class="card news-card">
 
     
-        <a href="news/dear-self-a-loving-reminder.html" title="Dear Self: A Loving Reminder">
+        <a href="news/DearSelfLoving.php" title="Dear Self: A Loving Reminder">
         
     
         <div class="news-card-inner">
@@ -406,7 +406,7 @@ The content from cdnjs.cloudflare.com is all open source -->
                     
                     <h3 class="title-2">Develop your own resourcefulness</h3>
 
-                                            <a href="COURSESALLPLACEHOLDER"
+                                            <a href="Courses.php"
                         title="Find a Course"
                                                 class="button button--reversed">Find a Course</a>
                     

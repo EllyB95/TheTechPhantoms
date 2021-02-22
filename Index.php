@@ -424,17 +424,8 @@
 														</div><!-- #tribe-events-content -->
 													</div>
 
-													<div class="col-12 col-md-6 card-container">
-														<div class="card card-view-all">
-															<div class="card-view-all__body">
-																<h3>View all upcoming courses</h3>
-																<a class="button" title="View All Courses" href="CALENDARPAGEPLACEHOLDER">Course Calendar</a><!--https://recoverycollegeedmonton.ca/events/-->
-															</div>
-														</div>
-													</div>
-
 													<div class="col-12">
-														<p>If you require any help registering for courses please call us at <a href="tel:780-414-6300">780-414-6300</a> or email us at <a href="CALENDARPAGEPLACEHOLDER">recoverycollege@cmha-edmonton.ab.ca</a><!--https://recoverycollegeedmonton.ca/events/-->.</p>
+														<p>If you require any help registering for courses please call us at <a href="tel:780-414-6300">780-414-6300</a> or email us at <b> recoverycollege@cmha-edmonton.ab.ca</b><!--https://recoverycollegeedmonton.ca/events/-->.</p>
 													</div>
 
 												</div>

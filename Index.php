@@ -471,7 +471,7 @@
 														<div class="card news-card">
 
 
-															<a href="at-home-in-alberta-together.html" title="At Home in Alberta, Together">
+															<a href="news/AtHomeInAlberta.php" title="At Home in Alberta, Together">
 																<!--https://recoverycollegeedmonton.ca/news/at-home-in-alberta-together/-->
 
 

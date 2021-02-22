@@ -299,11 +299,11 @@
 																	<tbody>
 																		<tr>
 																			<th>Start</th>
-																			<td>Wednesday Nov 25, 2020</td>
+																			<td>Wednesday March 24, 2021</td>
 																		</tr>
 																		<tr>
 																			<th>End</th>
-																			<td>Wednesday Nov 25, 2020 (1 sessions)</td>
+																			<td>Wednesday April 21, 2021</td>
 																		</tr>
 																		<tr>
 																			<th>Location</th>
@@ -348,11 +348,11 @@
 																	<tbody>
 																		<tr>
 																			<th>Start</th>
-																			<td>Tuesday Dec 1, 2020</td>
+																			<td>Tuesday March 2, 2021</td>
 																		</tr>
 																		<tr>
 																			<th>End</th>
-																			<td>Tuesday Dec 1, 2020 (1 sessions)</td>
+																			<td>Tuesday April 6, 2021 </td>
 																		</tr>
 																		<tr>
 																			<th>Location</th>
@@ -397,11 +397,11 @@
 																	<tbody>
 																		<tr>
 																			<th>Start</th>
-																			<td>Thursday Dec 10, 2020</td>
+																			<td>Thursday March 11, 2021</td>
 																		</tr>
 																		<tr>
 																			<th>End</th>
-																			<td>Thursday Dec 10, 2020 (1 sessions)</td>
+																			<td>Thursday April 23, 2021</td>
 																		</tr>
 																		<tr>
 																			<th>Location</th>

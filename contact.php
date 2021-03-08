@@ -164,61 +164,41 @@ pg_close($dbconn);
             </div> -->
 
             <div id="site-menu" class="main-nav">
-                <!-- <div class="sitewide-banner" data-modified="1588200144">
+                <div class="sitewide-banner" data-modified="1588200144">
                     <div class="sitewide-banner-container">
                         <h4>CMHA Recovery College classes are now being offered online.</h4><a href="AddNewStudentNew.php" class="button">Register here.</a>
                     </div>
 
                     <i class="icon ion-md-close hide-banner"><span class="iconify" data-icon="gridicons:cross-small" data-inline="false"></span></i>
-                </div> -->
+                </div>
 
 
                 <div class="d-md-none">
                     <div class="nav-trigger d-lg-none">
                         <button class="menu-toggle button--primary" id="main-nav-toggle" aria-haspopup="true" aria-expanded="false"><span class="text">Menu</span> <span class="hamburger-bars"><span class="bar-helper"></span></span></button>
                     </div>
-                    <div class="brand brand--mobile">
-                        <a href="HomePage.php" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
-                            <!--https://recoverycollegeedmonton.ca-->
-                            <img src="images/svg/RC_Edmonton_Logo.svg" alt="Recovery College Edmonton">
-                        </a>
-                    </div>
+
                 </div>
 
                 <div class="navigation-wrapper">
                     <nav class="primary-nav">
                         <ul id="menu-main-menu" class="menu">
                             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22 nav-item"><a title="About Recovery College" href="about.php" class="nav-link">About Recovery College</a></li>
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom men
-                                <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-23" role="menu">
-                                    <!-- <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24 nav-item"><a title="All Courses" href="Courses.html" class="dropdown-item">All Courses</a></li>
-                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1994" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1994 nav-item"><a title="Online Classes" href="COURSESONLINEPLACEHOLDER" class="dropdown-item">Online Classes</a></li>
-                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25 nav-item"><a title="Calendar" href="CALENDARPAGEPLACEHOLDER" class="dropdown-item">Calendar</a></li>
-                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175 nav-item"><a title="Private Courses" href="private-courses.html" class="dropdown-item">Private Courses</a></li> -->
-                                </ul>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-23 nav-item"><a title="Find a Course" href="AllCourses.php">Find a Course</a>
                             </li>
                         </ul>
                     </nav>
 
-                    <div class="brand brand--desktop d-none d-md-block">
-                        <a href="HomePage.php" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
-                            <!--https://recoverycollegeedmonton.ca-->
-                            <img src="images/svg/RC_Edmonton_Logo.svg" alt="Recovery College Edmonton">
-                        </a>
-                    </div>
+
 
                     <nav class="utility-nav">
-                     <ul id="menu-utility-menu" class="menu">
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Contact" href="about.php" class="nav-link">About Us</a></li>
+
+                        <ul id="menu-utility-menu" class="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32 nav-item"><a title="News &amp; Updates" href="News.php" class="dropdown-item">News &#038; Updates</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20 nav-item"><a title="Donate" target="_blank" href="https://edmonton.cmha.ca/get-involved/donate/" class="nav-link">Donate</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="FAQs" href="Faq.php" class="nav-link">FAQs</a></li>
                             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Contact" href="contact.php" class="nav-link">Contact</a></li>
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Register" href="AddNewStudentNew.php" class="nav-link">Register</a></li>
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="admin/AdminLogin.php">Admin Login</a></li>
-                                    <li><a href="subAdmin/SubAdminLogin.php">Sub Admin Login</a></li>
-                                    <li><a href="user/StudentLogin.php">Student Login</a></li>
-                                </ul>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Login" href="user/StudentLogin.php" class="nav-link">Login</a>
                             </li>
                         </ul>
                     </nav>

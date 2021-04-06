@@ -5,10 +5,11 @@
       <ul class="admin-menu">
        
         <li>
-          <a href="StudentDashboard.php">
-              <span class="iconify" data-icon="fa-solid:house-user" data-inline="false"></span>
-            <span>Dashboard</span>
-          </a>
+          <?php 
+              $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
+              $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.cmhauser where emailaddress='".$EmailStudent."' ;")));
+              echo"<h4>Welcome ".$sql2['firstname']. " </h4>"
+              ?>
         </li>
         <li>
           <a href="MyCourses.php">
@@ -20,6 +21,12 @@
           <a href="EnrollNewCourse.php">
               <span class="iconify" data-icon="mdi:bookshelf" data-inline="false"></span>
             <span>Enroll New Course</span>
+          </a>
+        </li>
+        <li>
+          <a href="MyCart.php">
+              <span class="iconify" data-icon="mdi:bookshelf" data-inline="false"></span>
+            <span>My Cart</span>
           </a>
         </li>
         <li>
@@ -40,6 +47,12 @@
               <span>Academic Support</span>
             </a>
         </li>
+        <li>
+        <a href="StudentChangePassword.php">
+            <span class="iconify" data-icon="fluent:news-20-regular" data-inline="false"></span>
+            <span>Change Password</span>
+          </a>
+      </li> 
         <li>
           <a href="logout_user.php" ><button type="button"><h4>Sign Out</h4></button>  </a>
         </li>

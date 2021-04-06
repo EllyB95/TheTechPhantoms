@@ -1,4 +1,5 @@
 <?php
+
 // Initialize the session
 //session_start();
  $dbconn = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
@@ -19,7 +20,7 @@ echo "<center><h1>Doesn't work =(</h1></center>";
     if($login_check > 0){ 
       //  console.log("testing3");
         session_start();
-        $_SESSION["Email"] = $_POST['email'];
+        $_SESSION["EmailSubAdmin"] = $_POST['email'];
         header('Location: SubAdminPanel.php');    
     }else{
         echo "<div class='alert alert-danger'>
@@ -144,7 +145,7 @@ pg_close($dbconn);
 
 <!-- JS stuff. the jquery file enables the cart to be animated
 The content from cdnjs.cloudflare.com is all open source -->
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' id='jquery-js'></script>
+<script type='text/javascript' src='../js/jquery-3.6.0.min.js' id='jquery-js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js?ver=67c90ffd8417a442ac33ffaa4a4ee97a' id='popper-js-js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js?ver=67c90ffd8417a442ac33ffaa4a4ee97a' id='bootstrap-js-js'></script>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -254,7 +255,9 @@ The content from cdnjs.cloudflare.com is all open source -->
 
                 <input type="submit" class="btn btn-primary" name="login" value="login">
             </div>
+            <p>Forgot Your Password? <a href="SubAdminResetPassword.php">Reset Now</a>.</p>
             <p>For subadmin account, contact admin </p>
+
         </form>
     </div>  
 </div>

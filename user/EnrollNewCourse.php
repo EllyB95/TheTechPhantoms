@@ -9,7 +9,7 @@
   <link rel="stylesheet" id="bootstrap-css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css?ver=67c90ffd8417a442ac33ffaa4a4ee97a" type="text/css" media="all">
   <link rel="stylesheet" id="site_styles-css" href="../css/main_styles.css?ver=1.7" type="text/css" media="all">
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>"></script>
   <svg style="display:none;"></svg>
   <script type="text/javascript">
     function myFunction(clicked_id,data) {
@@ -18,6 +18,21 @@
         url: 'ajax.php',
         data: {
           action: 'enroll_this',
+          course_id: clicked_id,
+          Email: data
+        },
+        success: function(html) {
+          location.reload();
+        }
+
+      });
+    }
+    function myFunction2(clicked_id,data) {
+      $.ajax({
+        type: "POST",
+        url: 'ajax.php',
+        data: {
+          action: 'add_to_cart',
           course_id: clicked_id,
           Email: data
         },
@@ -48,10 +63,11 @@
                 <?php
 
                 $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
-                $sql = pg_query(sprintf("SELECT * FROM public.courses where course_id NOT IN (select course_id From public.enroll where emailaddress='".$_SESSION['Email']."');"));
-
+                $sql = pg_query(sprintf("SELECT * FROM public.courses where course_id NOT IN (select course_id From public.enroll where emailaddress='".$_SESSION['EmailStudent']."');"));
+               $count = 0;
 
                 while ($row = pg_fetch_assoc($sql)) {
+                  $count = $count + 1;
                   echo "
                           <div class='col-12 col-md-6 card-container'>
                             <div id='tribe-event-content--5068' class='card tribe-events-single events-single-card' data-filter-container=''>
@@ -81,9 +97,18 @@
                               </div>
 
                               <div class='card__footer'>";
-                              if($row['capacity']>$row['currently_enrolled'])
+
+                              // Sql Query to find 
+                              $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.cart where course_id='".$row['course_id']."' and emailaddress='".$_SESSION['EmailStudent']."';")));
+
+                              if($row['capacity']>$row['currently_enrolled'] && empty($sql2))
                               {
-                              echo "<button class='btn btn-primary' id='" . $row['course_id'] . "' data='".$row['owner_email']."' onclick='myFunction(this.id,this.data)'>Enroll</button>";
+                              echo "<button class='btn btn-primary' id='" . $row['course_id'] . "' data='".$row['owner_email']."' onclick='myFunction(this.id,this.data)'>Enroll</button><button class='btn btn-primary' id='" . $row['course_id'] . "' data='".$row['owner_email']."' onclick='myFunction2(this.id,this.data)'>Add to Cart</button>";
+                              }
+                              // cart data 
+                              else if (!empty($sql2))
+                              {
+                                echo "<button class='btn btn-primary' id='" . $row['course_id'] . "' data='".$row['owner_email']."' onclick='myFunction(this.id,this.data)' disabled>Added to cart</button>";
                               }
                               else
                               {
@@ -94,11 +119,13 @@
                           </div>";
                 }
 
+                echo "</div><br>";
+
+                if ($count == 0)
+                    echo "<center><p>No course available to enroll</p></center>";
+
                 ?>
 
-
-
-              </div>
             </div>
 
           </section>

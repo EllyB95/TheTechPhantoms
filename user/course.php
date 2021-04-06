@@ -39,7 +39,7 @@
 
                             $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                             $sql = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.courses where course_id ='" . $_GET['course_id'] . "';")));
-
+                            $sql3 = pg_query(sprintf("SELECT * FROM public.course_specific_data where course_id ='" . $_GET['course_id'] . "';"));
                             echo "
               <tr>
                 <td>Course Name :</td>
@@ -67,13 +67,17 @@
                </tr>
                <tr>
                 <td>Course Data :</td>
-                <td><a href='../admin/uploads/" . $sql['course_data'] . "'>" . $sql['course_data'] . "</a></td>
+                <td>";
+                    while($row=pg_fetch_assoc($sql3)){
+                        echo "<a href='../admin/uploads/" . $row['course_data'] . "'>" . $row['course_data'] . "</a>";
+                    }
+                echo "</td>
                </tr>
                <tr>";
-                            $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.enroll where course_id ='" . $_GET['course_id'] . "' AND emailaddress='".$_SESSION['Email']."';")));
+                            $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.enroll where course_id ='" . $_GET['course_id'] . "' AND emailaddress='".$_SESSION['EmailStudent']."';")));
                             $status = $sql2['completed'] === 'f';
                             if ($status) {
-                                echo "<td><button id='" . $sql['course_id'] . "' value='" . $_SESSION['Email'] . "' class='btn btn-primary'>Completed</button></td>";
+                                echo "<td><button id='" . $sql['course_id'] . "' value='" . $_SESSION['EmailStudent'] . "' class='btn btn-primary'>Completed</button></td>";
                                 // echo "<td><form><input name='accept' type='submit' id='".$row['course_id']."' value='".$row['emailaddress']."'></td></form>";
                             } else
                                 echo "<td>Already Completed</td>";
@@ -83,7 +87,7 @@
 
                             ?>
                             <!-- </form> -->
-                            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                            <script src="../js/jquery-3.6.0.min.js"></script>
                             <script>
                                 $(document).ready(function() {
                                     $("button").click(function() {

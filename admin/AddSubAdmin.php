@@ -1,3 +1,4 @@
+<?php include 'userinfo_admin.php'; ?>
 <?php  
 $dbconn = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");  
 //connect to a database named "postgres" on the host "host" with a username and password  
@@ -13,7 +14,7 @@ if(isset($_POST['register'])&&!empty($_POST['register'])){
       $sql = "insert into public.sub_admin(first_name,last_name,email,password,mobile_no)values('".$_POST['first_name']."','".$_POST['last_name']."','".$_POST['email']."','".md5($_POST['password'])."','".$_POST['mobile_no']."')";
     $ret = pg_query($dbconn, $sql);
     if($ret){
-        
+        echo '<script>alert("Sub Admin Added Successfully")</script>';
             echo "Data saved Successfully";
     }else{
         
@@ -58,25 +59,25 @@ pg_close($dbconn);
             </thead>
             <tbody>
               <tr>
-                <td>First Name : </td>
+                <td>*First Name : </td>
                 <td><input type="text"  name="first_name" class="form-control"  required></td>
               </tr>
               <tr>
-                <td>Last Name : </td>
+                <td>*Last Name : </td>
                 <td><input type="text"  name="last_name" class="form-control"  required></td>
               </tr>
               <tr>
               <tr>
-                <td>Email : </td>
-                <td><input type="text"  name="email" class="form-control"  required></td>
+                <td>*Email : </td>
+                <td><input type="email"  name="email" class="form-control"  required></td>
               </tr>
               <tr>
-                <td>Mobile No : </td>
-                <td><input type="text"  name="mobile_no" class="form-control"  required></td>
+                <td>*Mobile No : </td>
+                <td><input type="tel"  name="mobile_no" class="form-control"  required></td>
               </tr>
               <tr>
-                <td>Password : </td>
-                <td><input type="text"  name="password" class="form-control"  required></td>
+                <td>*Password : </td>
+                <td><input type="password"  name="password" class="form-control"  required></td>
               </tr>
                 <td colspan="2"><center><input type="submit" class="btn btn-primary" name="register" value="register"></center></td>
                 

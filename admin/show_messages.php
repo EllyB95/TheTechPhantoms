@@ -1,3 +1,33 @@
+<?php include 'userinfo_admin.php'; ?><?php
+
+// Initialize the session
+//session_start();
+ $dbconn = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
+ 
+ if(isset($_POST['delete_all'])&&!empty($_POST['delete_all'])){
+    //console.log("testing1");
+    // $hashpassword = md5($_POST['password']);
+    $sql ="Delete from public.messages ";
+    $data = pg_query($dbconn,$sql); 
+   
+    if($data){ 
+      //  console.log("testing3");
+        // session_start();
+        // $_SESSION["EmailAdmin"] = $_POST['email'];
+        header('Location: show_messages.php');    
+    }else{
+        echo "<div class='alert alert-danger'>
+        <a href='#' class='close' data-dismiss='alert' aria-label='close'>Close X</a>
+        <p><strong>Alert!</strong></p>
+        Email or password wrong! Please try again!.
+    </div>'";
+    }
+}
+
+
+pg_close($dbconn); 
+
+?>
 <!DOCTYPE html>
 <html lang="en-CA" class="no-js">
 <head>
@@ -5,8 +35,25 @@
 <link href='../css/studentStyle.css' rel='stylesheet' type="text/css"/>
 <link href='../css/admin_table.css' rel='stylesheet' type="text/css"/>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-<svg style="display:none;">
-</svg>
+<svg style="display:none;"></svg>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+  function deleteMessage(sno)
+  {
+    $.ajax({
+        type: "POST",
+        url: 'admin_ajax.php',
+        data: {
+          action: 'delete_perticular_message',
+          sno: sno
+        },
+        success: function(html) {
+          location.reload();
+        }
+
+      });
+  }
+</script>
 </head>
 
 <body>
@@ -21,28 +68,47 @@
         <div class="main__title">
             <div class="main__greeting">
               <h1>Messages</h1>
+               <form  method="post">
               <table class="content-table">
             <thead>
               <tr>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Message</th>
+                <th>Delete</th>
               </tr>
             </thead>
             <tbody>
               <?php
+              
+                $flag = 0;
+
+
               $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
               $sql = pg_query(sprintf("SELECT * FROM public.messages ORDER BY sno DESC;"));
               while ($row = pg_fetch_assoc($sql)) {
+                $flag = 1;
                 echo "<tr>";
                 echo "<td>" . htmlspecialchars($row['name']) . " </td>";
                 echo "<td>" . htmlspecialchars($row['email']) . " </td>";
                 echo "<td>" . htmlspecialchars($row['message']) . " </td>";
+                echo "<td><button id='".$row['sno']."' onclick='deleteMessage(this.id)'>Delete</button></td>";
                 echo "</tr>";
               }
               pg_close($db); ?>
             </tbody>
+            <tr>
+              <?php
+                if($flag==1)
+                echo"<th colspan='4'><input type='submit' class='btn btn-primary' name='delete_all' value='Delete All'></th>";
+              else
+                echo"<th colspan='4'>No Message</th>";
+                ?>
+                
+              </tr>
+            </thead>
           </table>
+        </form>
     </article>
   <footer class="page-footer">
   </footer>

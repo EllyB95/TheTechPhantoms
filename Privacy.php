@@ -113,7 +113,7 @@
                         <button class="menu-toggle button--primary" id="main-nav-toggle" aria-haspopup="true" aria-expanded="false"><span class="text">Menu</span> <span class="hamburger-bars"><span class="bar-helper"></span></span></button>
                     </div>
                     <div class="brand brand--mobile">
-                        <a href="HomePage.html" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0"><!--https://recoverycollegeedmonton.ca-->
+                        <a href="HomePage.php" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0"><!--https://recoverycollegeedmonton.ca-->
                             <img src="images/svg/RC_Edmonton_Logo.svg" alt="Recovery College Edmonton">
                         </a>
                     </div>
@@ -131,7 +131,7 @@
                     </nav>
 
                     <div class="brand brand--desktop d-none d-md-block">
-                        <a href="HomePage.html" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
+                        <a href="HomePage.php" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
                             <!--https://recoverycollegeedmonton.ca-->
                             <img src="images/svg/RC_Edmonton_Logo.svg" alt="Recovery College Edmonton">
                         </a>
@@ -285,17 +285,21 @@
                         <ul class="footer-social-icons">
 
                             <li>
-				               <a href="https://www.facebook.com/CMHAEdmonton/" target="_blank" rel="noopener" aria-label="Facebook">
-				                    <span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false" style="margin-top: -8px;"></span>
-				               </a>
-			                </li>
+				<a href="https://www.facebook.com/CMHAEdmonton/" target="_blank" rel="noopener" aria-label="Facebook">
+				<span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false" style="margin-top: -8px;"></span>
 
-			                <li>
-				                <a href="https://twitter.com/CMHAEdmonton" target="_blank" rel="noopener" aria-label="Twitter">
-				                    <span class="iconify" data-icon="ion-logo-twitter" data-inline="false" style="margin-top: -8px;"></span>
+				</a>
+			</li>
 
-				                </a>
-			                </li>
+			<li>
+				<a href="https://twitter.com/CMHAEdmonton" target="_blank" rel="noopener" aria-label="Twitter">
+				<span class="iconify" data-icon="ion-logo-twitter" data-inline="false" style="margin-top: -8px;"></span>
+
+				</a>
+			</li>
+
+
+
                         </ul>
                     </div>
                 </div>

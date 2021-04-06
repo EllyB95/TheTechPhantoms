@@ -1,3 +1,4 @@
+<?php include 'userinfo_admin.php'; ?>
 <!DOCTYPE html>
 <html lang="en-CA" class="no-js">
 <head>
@@ -32,6 +33,7 @@
                 <th>Last Name</th>
                 <th>Email</th>
                 <th>Phone Number</th>
+                <th>Edit</th>
                 <!-- <th>Action</th> -->
               </tr>
             </thead>
@@ -39,15 +41,20 @@
             <?php
             $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
             $sql= pg_query(sprintf("select * from cmhauser"));
+            $count = 0;
             while ($row = pg_fetch_assoc($sql)) {
+              $count = $count + 1;
               echo "<tr><td>".htmlspecialchars($row['cmhauserid'])."</td>
               <td>".htmlspecialchars($row['username'])."</td>
               <td>".htmlspecialchars($row['firstname'])."</td>
               <td>".htmlspecialchars($row['lastname'])."</td>
               <td>".htmlspecialchars($row['emailaddress'])."</td>
               <td>".htmlspecialchars($row['phonenumber'])."</td>
+              <td><a href='EditMyAccount.php?StudentEmail=".htmlspecialchars($row['emailaddress'])."'>Edit</a></td>
               <tr>";
             }
+            if($count==0)
+            echo"<tr><td>No Student Available</td></tr>";
             ?>
             </tbody>
           </table>

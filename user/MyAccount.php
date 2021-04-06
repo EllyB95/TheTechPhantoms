@@ -27,18 +27,32 @@ if (!$db) {
                         , livingarrangement = '".$_POST['livingarrangement']."'
                         , sourceofincome = '".$_POST['sourceofincome']."'
                         , occupation = '".$_POST['occupation']."' 
-                        WHERE emailaddress = '".$Email."'";
+                        WHERE emailaddress = '".$EmailStudent."'";
       // (firstname, middlename, lastname, emailaddress, phonenumber, dateofbirth, city, province, gender, ethnicity, indigenousidentity, languagespoken, housingstatus, sourceofincome, occupation, username, password) VALUES ('".pg_escape_string($_POST['firstname'])."','".pg_escape_string($_POST['middlename'])."','".pg_escape_string($_POST['lastname'])."','".pg_escape_string($_POST['emailaddress'])."','".pg_escape_string($_POST['phonenumber'])."','".pg_escape_string($_POST['dateofbirth'])."','".pg_escape_string($_POST['city'])."','".pg_escape_string($_POST['province'])."','".pg_escape_string($_POST['gender'])."','".pg_escape_string($_POST['ethnicity'])."','".pg_escape_string($_POST['indigenousidentity'])."','".pg_escape_string($_POST['languagespoken'])."','".pg_escape_string($_POST['housingstatus'])."','".pg_escape_string($_POST['sourceofincome'])."','".pg_escape_string($_POST['occupation'])."','".pg_escape_string($_POST['username'])."','".pg_escape_string($_POST['password'])."')";
       $ret = pg_query($db, $RegisterSql);
       if($ret){
-          
-              echo "Data upated Successfully";
+          echo '<script>alert("Account upated Successfully")</script>';
+              //echo "Data upated Successfully";
       }else{
           
               echo "Soething Went Wrong";
       }
  }
 
+if(isset($_POST['delete'])&&!empty($_POST['delete'])){
+      $RegisterSql = "Delete FROM public.cmhauser 
+                        
+                        WHERE emailaddress = '".$EmailStudent."'";
+      // (firstname, middlename, lastname, emailaddress, phonenumber, dateofbirth, city, province, gender, ethnicity, indigenousidentity, languagespoken, housingstatus, sourceofincome, occupation, username, password) VALUES ('".pg_escape_string($_POST['firstname'])."','".pg_escape_string($_POST['middlename'])."','".pg_escape_string($_POST['lastname'])."','".pg_escape_string($_POST['emailaddress'])."','".pg_escape_string($_POST['phonenumber'])."','".pg_escape_string($_POST['dateofbirth'])."','".pg_escape_string($_POST['city'])."','".pg_escape_string($_POST['province'])."','".pg_escape_string($_POST['gender'])."','".pg_escape_string($_POST['ethnicity'])."','".pg_escape_string($_POST['indigenousidentity'])."','".pg_escape_string($_POST['languagespoken'])."','".pg_escape_string($_POST['housingstatus'])."','".pg_escape_string($_POST['sourceofincome'])."','".pg_escape_string($_POST['occupation'])."','".pg_escape_string($_POST['username'])."','".pg_escape_string($_POST['password'])."')";
+      $ret = pg_query($db, $RegisterSql);
+      if($ret){
+          echo '<script>alert("Account Deleted Successfully")</script>';
+              echo "<script>setTimeout(\"location.href = '../AddNewStudentNew.php';\",0);</script>";
+      }else{
+          
+              echo "Soething Went Wrong";
+      }
+ }
 
 pg_close($db);
 ?>
@@ -92,7 +106,7 @@ pg_close($db);
                 <?php
               $sr_no = 1;
               $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
-              $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.cmhauser where emailaddress='".$Email."' ;")));
+              $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.cmhauser where emailaddress='".$EmailStudent."' ;")));
                 echo"<td><input type='text' name='username' class='form-control' disabled='true' value='".$sql2['username']."'></td>
                
                 <td>Email Address :</td>
@@ -124,9 +138,19 @@ pg_close($db);
                 <td>Province :</td>
                 <td> <input type='text' name='province' class='form-control'  value='".$sql2['province']."' placeholder='Optional'></td>
                
-                <td>Gender :</td>
-                <td> <input type='text' name='gender' class='form-control'  value='".$sql2['gender']."' placeholder='Optional'></td>
-               </tr>
+                ";
+
+                if($sql2['gender']=='male'){
+                echo "<td>Gender: <input type='radio'  id='male' name='gender' value='male' checked ><label for='male'>Male</label></td>
+                <td><input type='radio' id='female' name='gender' value='female'><label for='female'>Female</label></td>";
+                }
+                else
+                {
+                  echo "<td>Gender: <input type='radio' id='male' name='gender' value='male'><label for='male'>Male</label></td>
+                  <td><input type='radio' id='female' name='gender' value='female' checked><label for='female'>Female</label></td>";
+                }
+
+               echo "</tr>
                <tr>
                 <td>Ethnicity :</td>
                 <td> <input type='text' name='ethnicity' class='form-control'  value='".$sql2['ethnicity']."' placeholder='Optional'></td>
@@ -158,8 +182,8 @@ pg_close($db);
                </tr>
                <tr>
                 
-                <td> <input type="submit" class="btn btn-primary" name="update" value="Update"></td>
-                <td> </td>
+                <td colspan="2"> <center><input type="submit" class="btn btn-primary" name="update" value="Update"></center></td>
+                <td colspan="2"> <center><input type="submit" class="btn btn-primary" name="delete" value="Delete My Account"></center></td>
                </tr>
                </form>
                

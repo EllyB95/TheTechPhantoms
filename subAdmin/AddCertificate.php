@@ -68,8 +68,8 @@ ob_start();
                                 </thead>
                                 <tbody>
 
+                                    <?php include '../config.php';?>
                                     <?php
-                                    $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                                     $sql = pg_query(sprintf("SELECT * FROM public.enroll where completed=TRUE And certificate_generated=FALSE And course_id IN (SELECT course_id from courses where owner_email = '" . $_SESSION['EmailSubAdmin'] . "');"));
                                     $count = 0;
                                     while ($row = pg_fetch_assoc($sql)) {

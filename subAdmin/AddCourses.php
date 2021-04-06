@@ -7,7 +7,7 @@ ob_start();
 
 if (isset($_POST['submit2']) && !empty($_POST['submit2'])) {
   
-  $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
+  include '../config.php';
 
 
   $total = count($_FILES['course_data']['name']);

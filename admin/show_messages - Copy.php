@@ -34,8 +34,9 @@
             </thead>
             <tbody>
         
+                <?php include '../config.php';?>
                 <?php
-                  $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
+                 
                   $sql = pg_query(sprintf("SELECT * FROM public.courses;"));
                   while ($row = pg_fetch_assoc($sql)) {
                     echo "<tr>

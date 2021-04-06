@@ -253,12 +253,11 @@
 							<!--http://recoverycollegeedmonton.ca/courses-->
 						</div>
 
+						<?php include 'config.php';?>
 						<?php
 
 						$string = exec('getmac');
 						$mac = substr($string, 0, 17);
-
-						$db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
 						$sql = pg_query(sprintf("SELECT * FROM public.courses where course_id NOT IN (SELECT course_id from cart where emailaddress='" . $mac . "')"));
 						$count = 0;
 

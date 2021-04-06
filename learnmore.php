@@ -212,9 +212,9 @@
                                             </div>
                                         </div>
                                         <h1 class="title-2">
+                                            <?php include 'config.php';?>
                                             <?php
                                                 $course_id = $_GET['course_id'];
-                                                $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                                                 $sql = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.courses where course_id=".$course_id)));
                                                 echo $sql['course_name'];
                                             ?>
@@ -224,9 +224,9 @@
 
                                 <div class="course-hero-content">
                                     <p>
+                                    <?php include '../config.php';?>    
                                     <?php
                                                 $course_id = $_GET['course_id'];
-                                                $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                                                 $sql = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.courses where course_id=".$course_id)));
                                                 echo $sql['description'];
                                             ?>

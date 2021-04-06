@@ -1,5 +1,6 @@
+<?php include '../config.php';?>
 <?php  
-$dbconn = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres"); 
+$dbconn = pg_connect("sslmode=require sslrootcert=certificates/ca-certificate.crt host=thetechphantoms-do-user-8660169-0.b.db.ondigitalocean.com port=25060 dbname=Postgres user=CMHA password=j38mp49ya50ow9im"); 
 if(isset($_POST['submit'])&&!empty($_POST['submit'])){
     
       $sql = "insert into public.admin(first_name,last_name,email,password,mobile_no)values('".$_POST['first_name']."','".$_POST['last_name']."','".$_POST['email']."','".md5($_POST['password'])."','".$_POST['mobile_no']."')";

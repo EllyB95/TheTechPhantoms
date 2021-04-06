@@ -1,3 +1,4 @@
+<?php include '../config.php';?>
 <?php
 include("userinfo_admin.php");
 ob_start();
@@ -7,7 +8,7 @@ ob_start();
 
 if (isset($_POST['submit2']) && !empty($_POST['submit2'])) {
 
-  $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
+  $db = pg_connect("host=thetechphantoms-do-user-8660169-0.b.db.ondigitalocean.com port=25060 dbname=Postgres user=CMHA password=j38mp49ya50ow9im");
 
   if (isset($_SESSION['EmailAdmin'])) {
     $session_email = $_SESSION["EmailAdmin"];
@@ -138,8 +139,8 @@ if (isset($_POST['submit2']) && !empty($_POST['submit2'])) {
                       <td>Owner Email : </td>
                       <td>
                         <select class="form-control" id="owner_email" name="owner_email">
+                          <?php include '../config.php';?>
                           <?php
-                          $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                           $sql = pg_query(sprintf("SELECT * FROM public.sub_admin "));
                           while ($row = pg_fetch_assoc($sql)) {
                             echo '<option value="' . htmlspecialchars($row['email']) . '">' . htmlspecialchars($row['email']) . '</option>';

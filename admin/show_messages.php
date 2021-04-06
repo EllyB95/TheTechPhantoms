@@ -1,8 +1,10 @@
-<?php include 'userinfo_admin.php'; ?><?php
+<?php include 'userinfo_admin.php'; ?>
+<?php include '../config.php';?>
+<?php
 
 // Initialize the session
 //session_start();
- $dbconn = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
+ $dbconn = pg_connect("sslmode=require sslrootcert=certificates/ca-certificate.crt host=thetechphantoms-do-user-8660169-0.b.db.ondigitalocean.com port=25060 dbname=Postgres user=CMHA password=j38mp49ya50ow9im");
  
  if(isset($_POST['delete_all'])&&!empty($_POST['delete_all'])){
     //console.log("testing1");
@@ -79,12 +81,9 @@ pg_close($dbconn);
               </tr>
             </thead>
             <tbody>
+              <?php include '../config.php';?>
               <?php
-              
                 $flag = 0;
-
-
-              $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
               $sql = pg_query(sprintf("SELECT * FROM public.messages ORDER BY sno DESC;"));
               while ($row = pg_fetch_assoc($sql)) {
                 $flag = 1;

@@ -5,7 +5,7 @@
 3. Which Student in which course
 4. Update Details of Student
  -->
-
+<?php include '../config.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

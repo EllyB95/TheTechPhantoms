@@ -1,5 +1,5 @@
 <?php
-$dbconn = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
+$dbconn = pg_connect("sslmode=require sslrootcert=admin/certificates/ca-certificate.crt host=thetechphantoms-do-user-8660169-0.b.db.ondigitalocean.com port=25060 dbname=Postgres user=CMHA password=j38mp49ya50ow9im");
 if (isset($_POST['message_submit']) && !empty($_POST['message_submit'])) {
 
     $sql = "insert into public.messages(name,email,message)values('" . $_POST['name'] . "','" . $_POST['email'] . "','" . $_POST['message'] . "');";

@@ -1,3 +1,4 @@
+<?php include '../config.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,11 +30,9 @@
 
 <body>
     <div class="container">
+        <?php include '../config.php';?>
         <?php
-
         $course_id = $_GET['course_id'];
-
-        $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
         $sql = pg_query(sprintf("SELECT * FROM public.course_specific_data where course_id=$course_id;"));
         $count = 0;
         while ($row = pg_fetch_assoc($sql)) {

@@ -1,6 +1,6 @@
 <?php include 'userinfo_user.php'; ?>
+<?php include '../config.php';?>
 <?php
-$db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
 if (!$db) {
   echo "<center><h1>Doesn't work =(</h1></center>";
 } else {
@@ -103,9 +103,9 @@ pg_close($db);
               <form  method="post">
               <tr>
                 <td>Username :</td>
+                <?php include '../config.php';?>
                 <?php
               $sr_no = 1;
-              $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
               $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.cmhauser where emailaddress='".$EmailStudent."' ;")));
                 echo"<td><input type='text' name='username' class='form-control' disabled='true' value='".$sql2['username']."'></td>
                

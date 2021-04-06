@@ -1,8 +1,9 @@
 <?php include 'userinfo_sub_admin.php'; ?>
+<?php include '../config.php';?>
 <?php
 $CourseId = $_GET['CourseId'];
 
-$db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
+
 
 if (isset($_POST['update']) && !empty($_POST['update'])) {
 

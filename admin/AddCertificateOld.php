@@ -1,4 +1,6 @@
+<?php include '../config.php';?>
 <?php
+$dbconn = pg_connect("sslmode=require sslrootcert=certificates/ca-certificate.crt host=thetechphantoms-do-user-8660169-0.b.db.ondigitalocean.com port=25060 dbname=Postgres user=CMHA password=j38mp49ya50ow9im");
 if (isset($_POST['submit']) && !empty($_POST['submit'])) {
 
     $target_dir = "certificates/";
@@ -17,7 +19,7 @@ if (isset($_POST['submit']) && !empty($_POST['submit'])) {
     } else {
         if (move_uploaded_file($_FILES["certificate"]["tmp_name"], $target_file)) {
             // echo "The file ". htmlspecialchars( basename( $_FILES["course_data"]["name"])). " has been uploaded.";
-            $dbconn = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
+            $dbconn = pg_connect("sslmode=require sslrootcert=admin/certificates/ca-certificate.crt host=thetechphantoms-do-user-8660169-0.b.db.ondigitalocean.com port=25060 dbname=Postgres user=CMHA password=j38mp49ya50ow9im");
             $sql = "UPDATE public.enroll SET certificate='" . $_FILES['certificate']['name'] . "' WHERE course_id =" . $_POST['course_id'] . " AND emailaddress='" . $_POST['emailaddress'] . "';";
             $ret = pg_query($dbconn, $sql);
             if ($ret) {

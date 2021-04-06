@@ -18,8 +18,8 @@ include("userinfo_sub_admin.php");
       <div class="main__container">
         <div class="main__title">
             <div class="main__greeting">
+              <?php include '../config.php';?>
               <?php 
-              $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
               $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.sub_admin where email='".$EmailSubAdmin."' ;")));
               echo"<h1>Welcome ".$sql2['first_name']. " </h1>"
               ?>

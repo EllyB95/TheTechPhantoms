@@ -1,9 +1,7 @@
+<?php include '../config.php';?>
 <?php include 'userinfo_admin.php'; ?>
 <?php
 $CourseId = $_GET['CourseId'];
-
-$db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
-
 if (isset($_POST['update']) && !empty($_POST['update'])) {
 
     $sql = "update public.courses set 
@@ -73,8 +71,8 @@ pg_close($db);
                     </tr>
                   </thead>
                   <tbody>
+                    <?php include '../config.php';?>
                     <?php
-                    $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                     $sql = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.courses where course_id='" . $CourseId . "';")));
 
                     echo "<tr>

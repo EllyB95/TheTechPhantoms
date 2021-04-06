@@ -35,9 +35,8 @@
                         </thead>
                         <tbody>
                             <!-- <form  method="post"> -->
+                            <?php include '../config.php';?>
                             <?php
-
-                            $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                             $sql = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.courses where course_id ='" . $_GET['course_id'] . "';")));
                             $sql3 = pg_query(sprintf("SELECT * FROM public.course_specific_data where course_id ='" . $_GET['course_id'] . "';"));
                             echo "

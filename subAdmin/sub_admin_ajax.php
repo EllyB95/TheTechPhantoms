@@ -1,6 +1,6 @@
+<?php include '../config.php';?>
 <?php
 
-$db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
 
 if ($_POST['action'] == 'checkfilealreadyexist') { // file already exist check
    $filename = $_FILES['file']['name'];

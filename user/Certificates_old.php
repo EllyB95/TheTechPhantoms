@@ -33,9 +33,9 @@
               </tr>
             </thead>
             <tbody>
+              <?php include '../config.php';?>
               <?php
               $sr_no = 1;
-              $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
               $sql = pg_query(sprintf("SELECT * FROM public.enroll where completed=true AND certificate_generated=true AND emailaddress ='" . pg_escape_string($_SESSION['Email']) . "';"));
               while ($row = pg_fetch_assoc($sql)) { 
                 $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT course_name FROM public.courses where course_id='".$row['course_id']."' ;")));

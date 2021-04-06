@@ -1,8 +1,8 @@
+<?php include 'config.php';?>
 <?php
 
 $string=exec('getmac');
 $mac=substr($string, 0, 17); 
-$db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
 
 if ($_POST['action'] == 'add_to_cart') {
 	//echo "<script type='text/javascript'>alert('Course Added In Cart');</script>";

@@ -1,3 +1,4 @@
+<?php include '../config.php';?>
 <?php include 'userinfo_admin.php'; ?>
 <link href='../css/studentStyle.css' rel='stylesheet' type="text/css"/>
 <link href='../css/admin_table.css' rel='stylesheet' type="text/css"/>
@@ -16,8 +17,8 @@
       <div class="main__container">
         <div class="main__title">
             <div class="main__greeting">
+             <?php include '../config.php';?>
              <?php 
-              $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
               $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.admin where email='".$EmailAdmin."' ;")));
               echo"<h1>Welcome  ".$sql2['first_name']. " </h1>"
               ?>
@@ -34,9 +35,9 @@
         
         <div class="card_inner">
           <p class="text-primary-p">Students Enrolled</p>
+            <?php include '../config.php';?>
             <?php
               $sr_no = 1;
-              $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
               $sql1 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.cmhauser;")));
               $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.courses;")));
               $sql3 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.enroll;")));

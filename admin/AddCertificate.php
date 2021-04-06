@@ -1,4 +1,5 @@
 <?php include 'userinfo_admin.php'; ?>
+<?php include '../config.php';?>
 <!DOCTYPE html>
 <html lang="en-CA" class="no-js">
 
@@ -65,8 +66,8 @@
                                 </thead>
                                 <tbody>
 
+                                    <?php include '../config.php';?>
                                     <?php
-                                    $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                                     $sql = pg_query(sprintf("SELECT * FROM public.enroll where completed=TRUE And certificate_generated=FALSE;"));
                                     $count = 0;
                                     while ($row = pg_fetch_assoc($sql)) {

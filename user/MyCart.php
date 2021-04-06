@@ -74,10 +74,9 @@
           <section class="upcoming-courses">
             <div class="container">
               <div class="row">
+                <?php include '../config.php';?>
                 <?php
                 $count = 0;
-
-                $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                 $sql = pg_query(sprintf("SELECT * FROM public.courses where course_id NOT IN (select course_id From public.enroll where emailaddress='" . $_SESSION['EmailStudent'] . "');"));
 
 

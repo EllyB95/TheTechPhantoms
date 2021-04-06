@@ -63,9 +63,8 @@
 
 
 
+                <?php include '../config.php';?>
                 <?php
-
-                $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
                 $sql = pg_query(sprintf("SELECT * FROM public.enroll where emailaddress ='" . pg_escape_string($_SESSION['EmailStudent']) . "';"));
                 $count = 0;
 

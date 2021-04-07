@@ -101,14 +101,6 @@
 
 <body class="home page-template-default page page-id-13 tribe-js">
 
-	<!-- <a class="sr-only sr-only-focusable skip-link" href="#skip-anchor">Skip to content</a>
-
-	 Google Tag Manager (noscript)
-	<noscript>
-		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLHBZ39" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
-	End Google Tag Manager (noscript) -->
-
 	<div id="page" class="site">
 		<div id="content" class="site-content">		
 

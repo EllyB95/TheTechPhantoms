@@ -229,40 +229,28 @@ The content from cdnjs.cloudflare.com is all open source -->
                 <div class="navigation-wrapper">
                     <nav class="primary-nav">
                         <ul id="menu-main-menu" class="menu">
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22 nav-item"><a title="About Recovery College" href="../about.php" class="nav-link">About Recovery College</a></li>
-                            <!-- <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-23 nav-item"><a title="Find a Course" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-23">Find a Course</a>
-<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-23" role="menu">
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24 nav-item"><a title="All Courses" href="../Courses.html" class="dropdown-item">All Courses</a></li>
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1994" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1994 nav-item"><a title="Online Classes" href="COURSESONLINEPLACEHOLDER" class="dropdown-item">Online Classes</a></li>
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25 nav-item"><a title="Calendar" href="CALENDARPAGEPLACEHOLDER" class="dropdown-item">Calendar</a></li>
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175 nav-item"><a title="Private Courses" href="../private-courses.html" class="dropdown-item">Private Courses</a></li>
-</ul>
-</li> -->
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22 nav-item"><a title="About Recovery College" href="about.php" class="nav-link">About Recovery College</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-23 nav-item"><a title="Find a Course" href="AllCourses.php" aria-haspopup="true" aria-expanded="false" id="menu-item-dropdown-23">Find a Course</a></li>
                         </ul>
                     </nav>
 
                     <div class="brand brand--desktop d-none d-md-block">
-                        <a href="../HomePageAdmin.php" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
+                        <a href="../HomePage.php" title="Recovery College Edmonton" aria-label="Recovery College Edmonton" tabindex="0">
                             <img src="../images/svg/RC_Edmonton_Logo.svg" alt="Recovery College Edmonton">
                         </a>
                     </div>
 
                     <nav class="utility-nav">
                         <ul id="menu-utility-menu" class="menu">
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Contact" href="../about.php" class="nav-link">About Us</a></li>
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Contact" href="../contact.php" class="nav-link">Contact</a></li>
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Register" href="../AddNewStudentNew.php" class="nav-link">Register</a></li>
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login
-                                    <!-- <span class="caret"></span> -->
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="../admin/AdminLogin.php">Admin Login</a></li>
-                                    <li><a href="../subAdmin/SubAdminLogin.php">Sub Admin Login</a></li>
-                                    <li><a href="../user/StudentLogin.php">Student Login</a></li>
-                                </ul>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19 nav-item"><a title="News &amp; Updates" href="news.php" class="nav-link">News &amp; Updates</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20 nav-item"><a title="Donate" target="_blank" href="https://edmonton.cmha.ca/get-involved/donate/" class="nav-link">Donate</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="FAQs" href="Faq.php" class="nav-link">FAQs</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Contact" href="contact.php" class="nav-link">Contact</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Cart" href="MyCart.php" class="nav-link">&nbsp;&nbsp;&nbsp;Cart</a></li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Cart" href="MyCart.php" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
                             </li>
-                        </ul>
+                        </ul>       
                     </nav>
                 </div>
             </div>
@@ -311,159 +299,86 @@ The content from cdnjs.cloudflare.com is all open source -->
 
         </div><!-- #content -->
         <!-- Sitewide Pop-up -->
-        <footer id="site-footer" class="footer" role="contentinfo">
+       <footer id="site-footer" class="footer" role="contentinfo">
             <div class="container footer-container">
                 <div class="row">
                     <div class="footer-newsletter col-12 col-md-4">
                     </div>
                     <div class="footer-nav col-6 d-none d-md-block">
-                        <!-- <ul id="menu-footer-menu" class="menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-27 nav-item"><a title="Find a Course" href="#" class="nav-link">Find a Course</a>
-<ul  role="menu">
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28 nav-item"><a title="All Courses" href="../Courses.html" class="dropdown-item">All Courses</a></li>
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29 nav-item"><a title="Calendar" href="CALENDARPAGEPLACEHOLDER" class="dropdown-item">Calendar</a></li>
-</ul>
-</li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-31 nav-item"><a title="Get Help" href="#" class="nav-link">Get Help</a>
-<ul  role="menu">
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32 nav-item"><a title="News &amp; Updates" href="../news.html" class="dropdown-item">News &#038; Updates</a></li>
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 nav-item"><a title="FAQs" href="FAQPLACEHOLDER" class="dropdown-item">FAQs</a></li>
-</ul>
-</li> -->
-                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-402 nav-item"><a title="Contact Us" href="../contact.html" class="nav-link">Contact Us</a>
-                            <ul role="menu" aria-role="menu">
-                                <li class="nav-item" aria-role="menuitem">300, 10010-105 St NW<br />Edmonton, AB T5J 1C4</li>
-                                <li class="nav-item" aria-role="menuitem">780-414-6300</li>
-                            </ul>
-                        </li>
+                        <ul id="menu-footer-menu" class="menu">
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-27 nav-item">
+                            <a title="Find a Course" href="../AllCourses.php" class="nav-link">Find a Course</a>
+                                <ul role="menu">
+                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28 nav-item"><a title="All Courses" href="../AllCourses.php" class="dropdown-item">All Courses</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-31 nav-item">
+                            <a title="Get Help" href="#" class="nav-link">Get Help</a>
+                                <ul role="menu">
+                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32 nav-item"><a title="News &amp; Updates" href="../news.php" class="dropdown-item">News &amp; Updates</a></li>
+                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33 nav-item"><a title="FAQs" href="../Faq.php" class="dropdown-item">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-402 nav-item"><a title="Contact Us" href="contact.php" class="nav-link">Contact Us</a><ul role="menu" aria-role="menu"><li class="nav-item" aria-role="menuitem">300, 10010-105 St NW<br>Edmonton, AB T5J 1C4</li><li class="nav-item" aria-role="menuitem">780-414-6300</li></ul></li>
                         </ul>
                     </div>
 
                     <div class="footer-other-blogs col-12 col-md-2">
-
-
+                                                    
                         <ul class="menu">
                             <li class="nav-item">
                                 <a href="#" class="nav-link link">Other Locations</a>
                                 <ul class="cmha-locations-menu" role="menu" aria-role="menu">
-                                    <li class="menu-item" aria-role="menuitem">
-                                        <a href="http://recoverycollegecalgary.ca" title="Recovery College Calgary">Calgary</a>
+                                    <li class="menu-item" aria-role="menuitem"><a href="http://recoverycollegecalgary.ca" title="Recovery College Calgary">Calgary</a>
                                     </li>
-                                    <li class="menu-item" aria-role="menuitem">
-                                        <a href="http://recoverycollegewoodbuffalo.ca" title="Recovery College Wood Buffalo">Wood Buffalo</a>
+                                    <li class="menu-item" aria-role="menuitem"><a href="http://recoverycollegewoodbuffalo.ca" title="Recovery College Wood Buffalo">Wood Buffalo</a>
                                     </li>
-                                    <li class="menu-item" aria-role="menuitem">
-                                        <a href="http://recoverycollegelethbridge.ca" title="Recovery College Lethbridge">Lethbridge</a>
+                                    <li class="menu-item" aria-role="menuitem"><a href="http://recoverycollegelethbridge.ca" title="Recovery College Lethbridge">Lethbridge</a>
                                     </li>
-                                    <li class="menu-item" aria-role="menuitem">
-                                        <a href="http://recoverycollegecentralalberta.ca" title="Recovery College Central Alberta">Central Alberta</a>
+                                    <li class="menu-item" aria-role="menuitem"><a href="http://recoverycollegecentralalberta.ca" title="Recovery College Central Alberta">Central Alberta</a>
                                     </li>
-
                                 </ul>
                             </li>
                         </ul>
                     </div>
-
                 </div>
 
                 <div class="row">
-
                     <div class="col-12 col-md-4 footer-main-site-link">
-
-                        <a href="https://edmonton.cmha.ca/" target="_blank">
-                            <img class="" srcset="../images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg 1w, ../images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg 1w, ../images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg 1w, ../images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg 1w" src="../images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg" alt=""></a>
+                        <a href="../HomePage.php">
+                        <img class="" srcset="../images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg 1w, images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg 1w, images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg 1w, images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg 1w" src="https://images/svg/CMHA_AB_Edmonton_ENG_logo-1.svg" alt="">
+                        </a>
                     </div>
 
                     <div class="col-12 col-md-8 footer-social">
                         <span class="title-5">Find Us</span>
-                        <ul class="footer-social-icons">
-
-                            <li>
-                                <a href="https://www.facebook.com/CMHAEdmonton/" target="_blank" rel="noopener" aria-label="Facebook">
-                                    <span class="iconify" data-icon="ion-logo-facebook" data-inline="false"></span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://twitter.com/CMHAEdmonton" target="_blank" rel="noopener" aria-label="Twitter">
-                                    <span class="iconify" data-icon="ion-logo-twitter" data-inline="false"></span>
-                                </a>
-                            </li>
-
-
-
-                        </ul>
+                            <ul class="footer-social-icons">
+                                <li><a href="https://www.facebook.com/CMHAEdmonton/" target="_blank" rel="noopener" aria-label="Facebook"><span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false" style="margin-top: -8px;"></span></a>
+                                </li>
+                                <li><a href="https://twitter.com/CMHAEdmonton" target="_blank" rel="noopener" aria-label="Twitter"><span class="iconify" data-icon="ion-logo-twitter" data-inline="false" style="margin-top: -8px;"></span></a>
+                                </li>
+                            </ul>
                     </div>
                 </div>
 
                 <div class="footer-meta">
                     <div class="row">
-
                         <div class="col-12 col-sm-4 col-md-6">
-
-                            <span class="footer-meta-item"><a href="../Privacy.html">Privacy Page</a></span>
+                            <span class="footer-meta-item"><a href="../Privacy.php">Privacy Page</a></span>
                             <span class="footer-meta-sep">|</span>
-
-                            <span class="footer-meta-item"><a href="../Terms.html">Terms of Use</a></span>
+                            <span class="footer-meta-item"><a href="../TermsConditions.php">Terms of Use</a></span>
                             <span class="footer-meta-sep">|</span>
-
-                            <span class="footer-meta-item"><a href="../copyright-permissions.html">Copyright &amp; Permissions</a></span>
-
+                            <span class="footer-meta-item"><a href="../CopyrightPermissions.php">Copyright &amp; Permissions</a></span>
                         </div>
 
                         <div class="col-12 col-sm-8 col-md-6">
-                            <span class="copy-registration"><span class="footer-meta-item">&copy; Recovery College Edmonton 2020, All Rights Reserved</span><span class="footer-meta-item">Registered Charity Number: 118834316RR</span></span>
+                            <span class="copy-registration"><span class="footer-meta-item">© Recovery College Edmonton 2020, All Rights Reserved</span><span class="footer-meta-item">Registered Charity Number: 118834316RR</span></span>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <div class="modal fade" id="waitlist-modal" tabindex="-1" role="dialog" aria-labelledby="waitlist-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="waitlist-modal-title">Join Waitlist</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-
-                        <p>This course is full. Add yourself to the waitlist you&#8217;ll be contacted when a spot opens up.</p>
-
-                        <form>
-                            <label for="waitlist__name">Name</label>
-                            <input type="text" name="name" id="waitlist__name" placeholder="John Doe" required>
-
-                            <p>What is your preferred method of contact?</p>
-                            <div class="radio-group">
-                                <field-group>
-                                    <input type="radio" name="contact-preference" id="waitlist-contact-preference-email" data-conditional-control="true" value="email" checked="checked" />
-                                    <label for="waitlist-contact-preference-email">Email</label>
-                                </field-group>
-                                <field-group>
-                                    <input type="radio" name="contact-preference" id="waitlist-contact-preference-phone" data-conditional-control="true" value="phone" />
-                                    <label for="waitlist-contact-preference-phone">Text Message</label>
-                                </field-group>
-                            </div>
-
-                            <label for="waitlist__email" data-conditional-switch="contact-preference" data-conditional-value="email">Email</label>
-                            <input type="email" name="email" id="waitlist__email" placeholder="john.smith@example.com" data-conditional-switch="contact-preference" data-conditional-value="email">
-                            <label for="waitlist__phone" data-conditional-switch="contact-preference" data-conditional-value="phone">Mobile (eg. 780-111-2222)</label>
-                            <input type="tel" name="phone" id="waitlist__phone" placeholder="780-111-2222 ( 10 digits )" data-conditional-switch="contact-preference" data-conditional-value="phone" minlength="10">
-
-                            <field-group>
-                                <input type="checkbox" id="waitlist-consent-checkbox" name="consent" required>
-                                <label for="waitlist-consent-checkbox">I agree with and accept the <a class="link" href="../privacy.html" target="_blank">Privacy Policy</a>.</label>
-                            </field-group>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="button button--secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="button button--plus" id="waitlist-submit">Join Waitlist</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- #page -->
 

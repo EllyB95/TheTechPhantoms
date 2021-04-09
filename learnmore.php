@@ -120,7 +120,7 @@
     </div>
 </div>
             <div id="skip-anchor" tabindex="-1"></div>
-            <div class="course-hero-image">
+            <div class="header header-hero">
 
                 <div class="container">
                     <div class="row">

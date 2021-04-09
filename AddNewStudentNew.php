@@ -161,55 +161,55 @@ The content from cdnjs.cloudflare.com is all open source -->
         <form method="post">
  
             <div class="form-group">
-                <label>*firstname</label>
+                <label>*First Name</label>
                 <input type="text" name="firstname" required>
                 <span class="help-block"></span>
             </div> 
             <div>
-                <label>middlename</label>
+                <label>Middle Name</label>
                 <input type="text" name="middlename">
                 <span class="help-block"></span>
             </div> 
             <div class="form-group">
-                <label>*lastname</label>
+                <label>*Last Name</label>
                 <input type="text" name="lastname" required>
                 <span class="help-block"></span>
             </div>
             <div class="form-group">
-                <label>*emailaddress</label>
+                <label>*Emailaddress</label>
                 <input type="email" name="emailaddress" required>
                 <span class="help-block"></span>
             </div>
 
             <div>
-                <label>*phonenumber</label>
+                <label>*Phone Number</label>
                 <input type="tel" pattern="[6-9]{1}[0-9]{9}"  name="phonenumber" id="phonenumber" required>
                 <span class="help-block"></span>
             </div>           
             <div>
-                <label>*dateofbirth</label>
+                <label>*Date of Birth</label>
                 <input type="date" name="dateofbirth" required>
                 <span class="help-block"></span>
             </div> 
             <div>
-                <label>city</label>
+                <label>City</label>
                 <input type="text" name="city">
                 <span class="help-block"></span>
             </div> 
             <div>
-                <label>province</label>
+                <label>Province</label>
                 <input type="text" name="province" >
                 <span class="help-block"></span>
             </div> 
             <div>
-                <label>*gender</label><br>
+                <label>*Gender</label><br>
                 <input type="radio" name="gender" id="gender" value="male"> Male<br>
                 <input type="radio" name="gender"  id="gender" value="female"> Female<br>
                 <input type="radio" name="gender"  id="gender" value="other"> Other
                 <span class="help-block"></span>
             </div> 
             <div>
-                <label>ethnicity</label>
+                <label>Ethnicity</label>
                 <input type="text" name="ethnicity"  >
                 <span class="help-block"></span>
             </div> 
@@ -219,7 +219,7 @@ The content from cdnjs.cloudflare.com is all open source -->
                 <span class="help-block"></span>
             </div> 
             <div>
-                <label>indigenousidentity</label>
+                <label>Indigenous Identity</label>
                 <input type="text" name="indigenousidentity" >
                 <span class="help-block"></span>
             </div> 
@@ -229,7 +229,7 @@ The content from cdnjs.cloudflare.com is all open source -->
                 <span class="help-block"></span>
             </div> 
             <div>
-                <label>housingstatus</label>
+                <label>Housing Status</label>
                 <input type="text" name="housingstatus">
                 <span class="help-block"></span>
             </div> 
@@ -239,12 +239,12 @@ The content from cdnjs.cloudflare.com is all open source -->
                 <span class="help-block"></span>
             </div> 
             <div>
-                <label>sourceofincome</label>
+                <label>Source of Income</label>
                 <input type="text" name="sourceofincome" >
                 <span class="help-block"></span>
             </div> 
             <div>
-                <label>occupation</label>
+                <label>Occupation</label>
                 <input type="text" name="occupation" >
                 <span class="help-block"></span>
             </div>

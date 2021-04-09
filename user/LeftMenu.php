@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <nav>
-      <a href="../HomePage.php">
+      <a href="MyCourses.php">
         <img class="logo" src="../images/png/cropped-RecoveryCollege_Favicon-180x180.png" alt="Recovery College logo">
       </a>   
       <ul class="admin-menu">

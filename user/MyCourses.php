@@ -58,11 +58,9 @@
 
 
           <section class="upcoming-courses">
-
-            <div class="container">
-              <div class="row">
-
-
+            <div class="main__container">
+             <div class="main__title">
+              <div class="main__greeting">
 
                 <?php include '../config.php';?>
                 <?php
@@ -122,7 +120,7 @@
               </div>
 
               
-
+            </div>
           </section>
 
 

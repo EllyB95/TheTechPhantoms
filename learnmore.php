@@ -129,7 +129,7 @@
                             <div class="course-hero">
                                 <div class="course-hero-top">
 
-                                    <div class="course-image-title">
+                                    <div class="course-image-title" style="text-align: left;">
                                         <div class="course-hero-image">
                                             <div class="responsive-background ">
                                                 <div class="image-controller d-block">

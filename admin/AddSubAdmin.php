@@ -1,5 +1,8 @@
 <?php include 'userinfo_admin.php'; ?>
 <?php include '../config.php';?>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <?php  
 //connect to a database named "postgres" on the host "host" with a username and password  
 $dbconn = pg_connect("sslmode=require sslrootcert=certificates/ca-certificate.crt host=thetechphantoms-do-user-8660169-0.b.db.ondigitalocean.com port=25060 dbname=Postgres user=CMHA password=j38mp49ya50ow9im"); 

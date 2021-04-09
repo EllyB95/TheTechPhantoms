@@ -137,7 +137,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="title-2">
+                                        <h1 class="title-2" style="color: white;">
                                             <?php include 'config.php';?>
                                             <?php
                                                 $course_id = $_GET['course_id'];
@@ -147,7 +147,7 @@
                                         </h1>
                                     </div>
                                 </div>
-
+                            
                                 <div class="course-hero-content">
                                     <p>
                                     <?php include '../config.php';?>    
@@ -170,7 +170,7 @@
             <section class="intro" id="intro-frontpage">
 
 				<div class="brush-stroke brush-stroke-top" style="background-image: url(images/svg/white-top.svg);"></div>
-
+                
 				<div class="brush-stroke brush-stroke-bottom" style="background-image: url(images/svg/white-top.svg);"></div>
 
 			</section>

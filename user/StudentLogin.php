@@ -130,6 +130,7 @@ pg_close($dbconn);
 <html lang="en-CA" class="no-js">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         document.documentElement.classList = '';
     </script>

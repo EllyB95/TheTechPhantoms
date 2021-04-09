@@ -60,6 +60,7 @@ pg_close($db);
 <html lang="en-CA" class="no-js">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link href='../css/studentStyle.css' rel='stylesheet' type="text/css" />
   <link href='../css/admin_table.css' rel='stylesheet' type="text/css" />

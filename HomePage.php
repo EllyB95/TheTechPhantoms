@@ -238,11 +238,8 @@
 
 						<div class="col-12">
 							<h2>Find an online class here. </h2>
-							<p class="big">Register for an online virtual course or get more information in our
-								<!-- <a href="AllCourses.php"> -->course catalogue
-								<!-- </a> -->.
-							</p>
-							<!--http://recoverycollegeedmonton.ca/courses-->
+							<p class="big">Register for an online virtual course or get more information in our course catalogue</p>
+							
 						</div>
 
 						<?php include 'config.php';?>
@@ -320,12 +317,16 @@
 											<table class='details'>
 												<tbody>
 													<tr>
-														<th>Start</th>
+														<th>Start Date</th>
 														<td>" . htmlspecialchars($row['start_date']) . "</td>
 													</tr>
 													<tr>
-														<th>End</th>
+														<th>End Date</th>
 														<td>" . htmlspecialchars($row['end_date']) . "</td>
+													</tr>
+													<tr>
+														<th>Location</th>
+														<td>Online</td>
 													</tr>
 												</tbody>
 											</table>

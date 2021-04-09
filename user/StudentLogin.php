@@ -56,69 +56,6 @@ if (isset($_POST['login']) && !empty($_POST['login'])) {
 
 
 pg_close($dbconn);
-// Check if the user is already logged in, if yes then redirect him to welcome page
-// if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-//   header("location: StudentDashboard.php");
-//   exit;
-//}
-
-// Include config file
-// require_once "../php/config.php";
-
-
-// Define variables and initialize with empty values
-// $username = $password = "";
-// $username_err = $password_err = "";
-
-
-// if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-
-//     if(empty(trim($_POST["username"]))){
-//         $username_err = "Please enter username.";
-//     } else{
-//         $username = trim($_POST["username"]);
-//     }
-
-//     if(empty(trim($_POST["password"]))){
-//         $password_err = "Please enter your password.";
-//     } else{
-//         $password = trim($_POST["password"]);
-//     }
-
-
-//     if(empty($username_err) && empty($password_err)){
-
-
-
-
-//         require_once "../php/sql.php";
-
-//         $statement = pg_query($db_connection, $LoginSql);
-
-//         $login_check = pg_num_rows($statement);
-//     if($login_check > 0){ 
-
-
-//                             session_start();
-
-
-//                             $_SESSION["loggedin"] = true;
-//                             $_SESSION["username"] = $username;                            
-
-
-//                             header("location: StudentDashboard.php");
-
-//     }else{
-
-//                             $password_err = "Invalid password or username";
-
-//     }
-
-
-//     pg_close($db_connection);
-// }
-// }
 ?>
 
 
@@ -283,7 +220,7 @@ The content from cdnjs.cloudflare.com is all open source -->
                         <div class="form-group">
 
 
-                            <input type="submit" class="btn btn-primary" name="login" value="login">
+                            <input type="submit" class="btn btn-primary" name="login" value="login" target="_blank">
                         </div>
                         <p>Don't have an account? <a href="../AddNewStudentNew.php">Sign up now</a>.</p>
                         <p>Forgot Your Password? <a href="StudentResetPassword.php">Reset Now</a>.</p>

@@ -64,7 +64,7 @@
 
     <script type="text/javascript">
         function Enroll(clicked_id) {
-            window.location.href = "/platform/user/StudentLogin.php";
+            window.location.href = "/TheTechPhantoms/user/StudentLogin.php";
         }
 
         function ShowAllCourses() {

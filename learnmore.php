@@ -120,7 +120,7 @@
     </div>
 </div>
             <div id="skip-anchor" tabindex="-1"></div>
-            <div class="header header-hero">
+            <div class="course-hero-image">
 
                 <div class="container">
                     <div class="row">
@@ -129,7 +129,7 @@
                             <div class="course-hero">
                                 <div class="course-hero-top">
 
-                                    <div class="course-image-title" style="text-align: left;">
+                                    <div class="course-image-title">
                                         <div class="course-hero-image">
                                             <div class="responsive-background ">
                                                 <div class="image-controller d-block">
@@ -137,7 +137,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="title-2" style="color: white; text-align: left;">
+                                        <h1 class="title-2" style="color: white;">
                                             <?php include 'config.php';?>
                                             <?php
                                                 $course_id = $_GET['course_id'];

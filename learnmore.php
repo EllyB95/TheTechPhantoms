@@ -137,7 +137,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="title-2" style="color: white;">
+                                        <h1 class="title-2" style="color: white;" text-align="left">
                                             <?php include 'config.php';?>
                                             <?php
                                                 $course_id = $_GET['course_id'];

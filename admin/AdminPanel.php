@@ -24,7 +24,7 @@
                           </div>
                       </div>
                   </div>
-                  <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1200" height="265">
+                  <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1100" height="265">
             </div>
             </div>
 

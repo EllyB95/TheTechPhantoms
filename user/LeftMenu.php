@@ -39,12 +39,6 @@
           </a>
         </li>
         <li>
-          <a href="Certificates.php">
-              <span class="iconify" data-icon="grommet-icons:certificate" data-inline="false"></span>
-              <span>Certificates</span>
-            </a>
-        </li>
-        <li>
           <a href="AcademicSupport.php">
               <span class="iconify" data-icon="teenyicons:users-solid" data-inline="false"></span>
               <span>Academic Support</span>

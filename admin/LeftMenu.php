@@ -7,7 +7,14 @@
     </a>   
     <ul class="admin-menu">
       <li class="menu-heading">
-        <h3>Admin</h3>
+        <h3>
+          <?php include '../config.php';?>
+             <?php 
+              $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.admin where email='".$EmailAdmin."' ;")));
+              echo"<h1>Welcome  ".$sql2['first_name']. " </h1>"
+              ?>
+                
+        </h3>
       </li>
       <li>
         <a href="AdminPanel.php">

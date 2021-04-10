@@ -185,7 +185,7 @@ pg_close($dbconn);
           <div class="main__container">
             <div class="main__title">
               <div class="main__greeting">
-                <h2 style="margin: 30px" >Change Your Password</h2>
+                <h2 style="margin: 10px" >Change Your Password</h2>
               </div>
             </div>
             <div class="container" style="margin: 30px">

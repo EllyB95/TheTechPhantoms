@@ -36,25 +36,25 @@
       </li>
       <li>
         <a href="AddCourses.php">
-            <span class="iconify" data-icon="fluent:news-20-regular" data-inline="false"></span>
+            <span class="iconify" data-icon="raphael:books" data-inline="false"></span>
             <span>Add Courses</span>
           </a>
       </li> 
       <li>
         <a href="AddNewStudent.php">
-            <span class="iconify" data-icon="fluent:news-20-regular" data-inline="false"></span>
+            <span class="iconify" data-icon="whh:student" data-inline="false"></span>
             <span>Add Student</span>
           </a>
       </li> 
       <li>
         <a href="AddSubAdmin.php">
-            <span class="iconify" data-icon="fluent:news-20-regular" data-inline="false"></span>
+            <span class="iconify" data-icon="subway:admin-1" data-inline="false"></span>
             <span>Add Sub Admin</span>
           </a>
       </li> 
       <li>
         <a href="AdminChangePassword.php">
-            <span class="iconify" data-icon="fluent:news-20-regular" data-inline="false"></span>
+            <span class="iconify" data-icon="wpf:password1" data-inline="false"></span>
             <span>Change Password</span>
           </a>
       </li> 

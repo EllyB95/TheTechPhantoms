@@ -121,7 +121,7 @@ pg_close($db);
               <tr>
               <td>Occupation : </td>
               <td><input type="text" name="occupation" class="form-control" placeholder="Optional"></td>
-              <td colspan="2"><center><input type="submit" name="save" value="submit"></center></td> 
+              <td colspan="2"><center><input type="submit" class="btn btn-danger" name="save" value="submit"></center></td> 
               </tr>
                    </tbody>
                 </table>

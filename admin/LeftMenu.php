@@ -1,6 +1,4 @@
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+
 <nav>
     <a href="AdminPanel.php">
       <img class="logo" src="../images/png/cropped-RecoveryCollege_Favicon-180x180.png" alt="Recovery College logo">

@@ -44,7 +44,7 @@
       <div class="main__container">
         <div class="main__title">
             <div class="main__greeting">
-              <h1>Student Information</h1>
+              <h3>Student Information</h3>
             </div>
             
             </div>
@@ -115,6 +115,7 @@
 </div>
 </article>
           </section>
+        </section>
 
 
 

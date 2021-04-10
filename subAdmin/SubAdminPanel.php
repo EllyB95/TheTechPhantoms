@@ -25,59 +25,7 @@ include("userinfo_sub_admin.php");
         /*  include_once("../php/config.php");
           include_once("../php/sql.php");*/
      ?>
-    </article>
-  
-    <div class="main__cards">
-      <div class="card">
-        
-        <div class="card_inner">
-          <p class="text-primary-p">Students Enrolled</p>
-            <?php
-              $sr_no = 1;
-              $db = pg_connect("host=localhost port=5432 dbname=platform user=postgres password=postgres");
-              $sql1 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.cmhauser;")));
-              $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.courses;")));
-              $sql3 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.enroll;")));
-              $sql4 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.enroll WHERE certificate_generated ='true';")));
-          echo"<span class='font-bold text-title'>&nbsp;&nbsp;".$sql1['total']."</span>
-        </div>
-      </div>
-
-      
-
-      <div class='card'>
-        
-        <div class='card_inner'>
-          <p class='text-primary-p'>Courses Available</p>
-          <span class='font-bold text-title'>&nbsp;&nbsp;".$sql2['total']."</span>
-        </div>
-      </div>
-
-      <div class='card'>
-        
-        <div class='card_inner'>
-          <p class='text-primary-p'>Total enrollment</p>
-          <span class='font-bold text-title'>&nbsp;&nbsp;".$sql3['total']."</span>
-        </div>
-      </div>
-      <div class='card'>
-        
-        <div class='card_inner'>
-          <p class='text-primary-p'>Certificate Generated</p>
-          <span class='font-bold text-title'>&nbsp;&nbsp;".$sql4['total']."</span>
-        </div>
-      </div>
-      "
-
      
-
-        
-          ?>
-        
-     </tr>
-            </thead>
-          </table>
-        </form>
     </article>
   <footer class="page-footer">
   </footer>

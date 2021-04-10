@@ -46,10 +46,6 @@
               <h3>Student Information</h3>
             </div>
             
-            </div>
-            <div class="container">
-              <div class="row">
-
 
 
                 <?php include '../config.php';?>
@@ -110,7 +106,6 @@
 
               </div>
 
-              </div>
 </div>
 </article>
           </section>

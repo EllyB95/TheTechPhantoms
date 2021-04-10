@@ -16,7 +16,7 @@
         </li>
         <li>
           <a href="MyCourses.php">
-              <span class="iconify" data-icon="mdi:bookshelf" data-inline="false"></span>
+              <span class="iconify" data-icon="raphael:books" data-inline="false"></span>
             <span>My Courses</span>
           </a>
         </li>
@@ -28,25 +28,25 @@
         </li>
         <li>
           <a href="MyCart.php">
-              <span class="iconify" data-icon="mdi:bookshelf" data-inline="false"></span>
+              <span class="iconify" data-icon="fluent:cart-16-regular" data-inline="false"></span>
             <span>My Cart</span>
           </a>
         </li>
         <li>
           <a href="MyAccount.php">
-              <span class="iconify" data-icon="carbon:account" data-inline="false"></span>
+              <span class="iconify" data-icon="ic:twotone-account-box" data-inline="false"></span>
             <span>My Account</span>
           </a>
         </li>
         <li>
           <a href="AcademicSupport.php">
-              <span class="iconify" data-icon="teenyicons:users-solid" data-inline="false"></span>
+              <span class="iconify" data-icon="si-glyph:customer-support" data-inline="false"></span>
               <span>Academic Support</span>
             </a>
         </li>
         <li>
         <a href="StudentChangePassword.php">
-            <span class="iconify" data-icon="fluent:news-20-regular" data-inline="false"></span>
+            <span class="iconify" data-icon="wpf:password1" data-inline="false"></span>
             <span>Change Password</span>
           </a>
       </li> 

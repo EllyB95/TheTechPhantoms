@@ -175,13 +175,7 @@ The content from cdnjs.cloudflare.com is all open source -->
                 </div>
 
                 <div class="navigation-wrapper">
-                    <nav class="primary-nav">
-                        <ul id="menu-main-menu" class="menu">
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22 nav-item"><a title="About Recovery College" href="../about.php" class="nav-link">About Recovery College</a></li>
-                            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-23 nav-item"><a title="Find a Course" href="../AllCourses.php" aria-haspopup="true" aria-expanded="false" id="menu-item-dropdown-23">Find a Course</a></li>
-                        </ul>
-                    </nav>
-
+                    
 
 
                     <nav class="utility-nav">

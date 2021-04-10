@@ -87,7 +87,7 @@ pg_close($db);
           <div class="main__container">
             <div class="main__title">
               <div class="main__greeting">
-                <h2 style="margin: 30px" >Academic Support</h2>
+                <h2 style="margin: 30px" >Personal Details</h2>
               </div>
             </div>
             <div class="container" style="margin-top: 30px">
@@ -96,8 +96,6 @@ pg_close($db);
             <table class="content-table">
               <thead>
                 <tr>
-                <th>Personal Info:</th>
-                <th></th>
                 <th></th>
                 <th></th>
                 </tr>

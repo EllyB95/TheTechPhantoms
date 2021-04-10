@@ -4,13 +4,14 @@
         <img class="logo" src="../images/png/cropped-RecoveryCollege_Favicon-180x180.png" alt="Recovery College logo">
       </a>   
       <ul class="admin-menu">
-       
-        <li>
+        <li class="menu-heading">
+          <h3>
           <?php include '../config.php';?>
           <?php 
               $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.cmhauser where emailaddress='".$EmailStudent."' ;")));
-              echo"<h4>Welcome ".$sql2['firstname']. " </h4>"
+              echo"<h1>Welcome ".$sql2['firstname']. " </h1>"
               ?>
+          </h3>
         </li>
         <li>
           <a href="MyCourses.php">
@@ -49,7 +50,7 @@
           </a>
       </li> 
         <li>
-          <a href="logout_user.php" class="btn btn-danger"><button type="button"><h4>Sign Out</h4></button>  </a>
+          <a href="logout_user.php"><button type="button"><h4>Sign Out</h4></button>  </a>
         </li>
         <br>
       </ul>

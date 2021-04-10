@@ -40,21 +40,22 @@ pg_close($db);
 </svg>
 </head>
 
-<body>
-<header class="page-header">
-  <?php include 'LeftMenu.php';?>
 
-</header>
-<section class="page-content">
-  <section class ="grid">
-    <article style="height: 800px">
-      <div class="main__container">
-        <div class="main__title">
+<body>
+  <header class="page-header">
+    <?php include 'LeftMenu.php'; ?>
+
+  </header>
+  <section class="page-content">
+    <section class="grid">
+      <article style="height: 800px">
+        <div class="main__container">
+          <div class="main__title">
             <div class="main__greeting">
-              <h1>Add Student</h1>
-              <form method="post">
-              <table class="content-table">
-            <thead>
+              <h1>Add New Student</h1>
+              <form method="post" enctype="multipart/form-data">
+                <table class="content-table">
+                  <thead>
               <tr>
                 <th></th>
                 <th></th>

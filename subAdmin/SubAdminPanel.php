@@ -13,11 +13,12 @@ include("userinfo_sub_admin.php");
   <?php include 'LeftMenu.php';?>
 </header>
 <section class="page-content">
-  <section class="grid">
-    <article>
-      <div class="main__container">
+  <section class ="grid">
+    <article style="height: auto;">
+      <div class="main__container" style="align-items: center;">
         <div class="main__title">
-            <div class="main__greeting">
+            <div class="main__greeting" >
+              <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1000" height="260">
               <?php include '../config.php';?>
               <?php 
               $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.sub_admin where email='".$EmailSubAdmin."' ;")));
@@ -79,30 +80,18 @@ include("userinfo_sub_admin.php");
         
           ?>
         
-     
-    </div>
-    <article>
-      <div id="piechart"></div>
-      <!--
-      <div class="charts">
-            <div class="charts__left">
-              <div class="charts__left__title">
-                <div>
-                  <h1>Daily Reports</h1>
-                  <p>CMHA, Edmonton, CA</p>
-                </div>
-                <i class="fa fa-usd" aria-hidden="true"></i>
-              </div>
-              <div id="apex1"></div>
-            </div> -->
-            <!-- CHARTS ENDS HERE -->
-        </div>
+     </tr>
+            </thead>
+          </table>
+        </form>
     </article>
-    <article></article>
-  </section>
   <footer class="page-footer">
   </footer>
 </section>
+</body>
+</head>
+</html>
+
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script type="text/javascript">

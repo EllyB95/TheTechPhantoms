@@ -44,14 +44,14 @@
     </div>
     <div class="page-content">
       <div class="grid" style="margin-top: 50px">
-        <article style="height: 1000px">
+        <article style="height: auto;">
           <div class="main__container">
             <div class="main__title">
               <div class="main__greeting">
-                <h2 style="margin-left: 30px" style="margin-top: 40px" >My Courses</h2>
+                <h2 style="margin: 30px" >My Courses</h2>
               </div>
             </div>
-            <div class="container" style="margin-top: 40px">
+            <div class="container" style="margin-top: 30px">
               <div class="row">
 
                 <?php include '../config.php';?>

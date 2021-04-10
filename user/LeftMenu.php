@@ -4,14 +4,13 @@
         <img class="logo" src="../images/png/cropped-RecoveryCollege_Favicon-180x180.png" alt="Recovery College logo">
       </a>   
       <ul class="admin-menu">
+       
         <li class="menu-heading">
-          <h3>
           <?php include '../config.php';?>
           <?php 
               $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.cmhauser where emailaddress='".$EmailStudent."' ;")));
-              echo"<h3>Welcome ".$sql2['firstname']. " </h3>"
+              echo"<h4>Welcome ".$sql2['firstname']. " </h4>"
               ?>
-          </h3>
         </li>
         <li>
           <a href="MyCourses.php">

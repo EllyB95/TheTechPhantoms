@@ -20,10 +20,14 @@
       <div class="main__container">
         <div class="main__title">
             <div class="main__greeting">
-                  <div class="image" style="background-image: url(../images/png/AdminHomePage.png);">
+                 <div class="d-none d-md-block col-12 col-md-6 hero-image">
+                      <div class="hero-image-container">
+                          <div class="hero-image hero-image-active" style="background-image: url(../images/png/AdminHomePage.png);">
+                          </div>
+                      </div>
                   </div>
             </div>
-            </div>
+        </div>
      <?php 
         /*  include_once("../php/config.php");
           include_once("../php/sql.php");*/

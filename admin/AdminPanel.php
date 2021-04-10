@@ -71,15 +71,11 @@ pg_close($dbconn);
   <section class="grid">
     <article>
       <div class="main__container">
-                 <div class="d-none d-md-block col-12 col-md-6 hero-image">
-                      <div class="hero-image-container">
-                          <div class="hero-image hero-image-active" style="background-image: url(images/svg/RecoveryCollege-FreeMentalHealthCourses-HeaderGraphic1.svg );">
-                          </div>
-                      </div>
-                  </div>
-                  <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1100" height="265">
+                  
           <div class="main__title">
             <div class="main__greeting">
+              <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1100" height="265">
+              
               <h1>Messages</h1>
                <form  method="post">
               <table class="content-table">

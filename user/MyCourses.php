@@ -34,18 +34,23 @@
   </script>
 </head>
 
-  <header class="page-header">
-  <?php include 'LeftMenu.php';?>
-</header>
-<section class="page-content">
-  <section class ="grid">
-    <article style="height: 800px">
-      <div class="main__container">
-        <div class="main__title">
-            <div class="main__greeting">
-              <h3>Student Information</h3>
+<body>
+  <div class="row">
+    
+      <header class="page-header">
+        <?php include 'LeftMenu.php'; ?>
+
+      </header>
+    </div>
+    <div class="page-content">
+      <div class="grid" style="margin-top: 30px">
+        <article style="height: 500px">
+          <div class="main__container">
+            <div class="main__title">
+              <div class="main__greeting">
+                <h3>Student Information</h3>
+              </div>
             </div>
-            
 
 
                 <?php include '../config.php';?>
@@ -104,25 +109,13 @@
 
                 ?>
 
-              </div>
-
-</div>
-</article>
-          </section>
-        </section>
-
-
-
-
-
-        </div><!-- #content -->
-
-
-
-      </div><!-- #page -->
-    </div>>
-  </div>
-
+          </div>
+        </article>
+      </div>
+    </div>
 
 <footer class="page-footer">
 </footer>
+
+</body>
+</html>

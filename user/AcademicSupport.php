@@ -16,16 +16,15 @@
 
 <body>
   <div class="row">
-    <div class='col-3'>
+    
       <header class="page-header">
         <?php include 'LeftMenu.php'; ?>
 
       </header>
     </div>
-    <div class='col-9'>
-    <!-- <section class="page-content"> -->
-      <section class="grid">
-        <article style="height: 200px">
+    <div class="page-content">
+      <div class="grid" style="margin-top: 30px">
+        <article style="height: 500px">
           <div class="main__container">
             <div class="main__title">
               <div class="main__greeting">
@@ -53,7 +52,7 @@
           </div>
         </article>
       <!-- </section> -->
-    </section>
+    </div>
     </div>
   </div>
 </body>

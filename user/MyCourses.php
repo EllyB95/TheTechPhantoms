@@ -48,10 +48,10 @@
           <div class="main__container">
             <div class="main__title">
               <div class="main__greeting">
-                <h2 style="margin-left: 30px">My Courses</h2>
+                <h2 style="margin-left: 30px margin-top: 30px;">My Courses</h2>
               </div>
             </div>
-              <form  method="post">
+              <div class="row">
 
                 <?php include '../config.php';?>
                 <?php
@@ -108,7 +108,7 @@
 
 
                 ?>
-              </form>
+              </div>
           </div>
         </article>
       </div>

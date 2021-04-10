@@ -64,7 +64,7 @@
 
     <script type="text/javascript">
         function Enroll(clicked_id) {
-            window.location.href = "user/StudentLogin.php";
+            window.location.href = "AddNewStudentNew.php";
         }
 
         function ShowAllCourses() {

@@ -24,13 +24,12 @@
                           </div>
                       </div>
                   </div>
-<<<<<<< HEAD
                   <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1200" height="265">
             </div>
             </div>
-=======
+
         </div>
->>>>>>> bc46b59221273454801f5ff091f63084636715f9
+
      <?php 
         /*  include_once("../php/config.php");
           include_once("../php/sql.php");*/

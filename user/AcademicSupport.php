@@ -36,8 +36,6 @@
             <table class="content-table">
               <thead>
                 <tr>
-                  <th></th>
-                  <th></th>
                 </tr>
               </thead>
               <tbody>

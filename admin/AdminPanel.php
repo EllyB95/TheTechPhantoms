@@ -22,6 +22,7 @@
             <div class="main__greeting">
                   <div class="image" style="background-image: url(../images/png/AdminHomePage.png);">
                   </div>
+                  <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1200" height="265">
             </div>
             </div>
      <?php 

@@ -77,7 +77,7 @@
                 <h2 style="margin: 30px" >My Cart</h2>
               </div>
             </div>
-            <div class="container" style="margin: 30px">
+            <div class="container" style="margin-top: 30px" style="margin-bottom: 30px">
               <div class="row">
                 <?php include '../config.php';?>
                 <?php

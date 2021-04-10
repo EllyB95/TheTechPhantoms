@@ -74,7 +74,7 @@ pg_close($dbconn);
         <div class="main__title">
             <div class="main__greeting">
               <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1000" height="265">
-              <h1>Messages</h1>
+              </br></br><h1>Messages</h1>
                <form  method="post">
               <table class="content-table">
             <thead>

@@ -20,7 +20,7 @@
       <div class="main__container">
         <div class="main__title">
             <div class="main__greeting">
-             <div class="image" style="background-image: url(images/png/AdminHomePage.png);">
+                  <div class="image" style="background-image: url(../images/png/AdminHomePage.png);">
                   </div>
             </div>
             </div>
@@ -79,23 +79,6 @@
         
      
     </div>
-    <article>
-      <div id="piechart"></div>
-      <!--
-      <div class="charts">
-            <div class="charts__left">
-              <div class="charts__left__title">
-                <div>
-                  <h1>Daily Reports</h1>
-                  <p>CMHA, Edmonton, CA</p>
-                </div>
-                <i class="fa fa-usd" aria-hidden="true"></i>
-              </div>
-              <div id="apex1"></div>
-            </div> -->
-            <!-- CHARTS ENDS HERE -->
-        </div>
-    </article>
   </section>
   <footer class="page-footer">
   </footer>

@@ -68,14 +68,12 @@ pg_close($dbconn);
   <?php include 'LeftMenu.php';?>
 </header>
 <section class="page-content">
-  <section class="grid">
-    <article>
+  <section class ="grid">
+    <article style="height: 800px">
       <div class="main__container">
-                  
-          <div class="main__title">
+        <div class="main__title">
             <div class="main__greeting">
               <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1100" height="265">
-              
               <h1>Messages</h1>
                <form  method="post">
               <table class="content-table">
@@ -112,12 +110,13 @@ pg_close($dbconn);
                 ?>
                 
               </tr>
+            </thead>
           </table>
         </form>
-      </div>
-    </div>
-            </div>
-           
-
-  
     </article>
+  <footer class="page-footer">
+  </footer>
+</section>
+</body>
+</head>
+</html>

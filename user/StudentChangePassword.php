@@ -191,7 +191,10 @@ pg_close($dbconn);
               <div class="row">
                 <table class="content-table">
                   <thead>
-                    <tr></tr>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                    </tr>
                   </thead>
                   <tbody>
                     <tr>

@@ -9,7 +9,7 @@
           <?php include '../config.php';?>
           <?php 
               $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.cmhauser where emailaddress='".$EmailStudent."' ;")));
-              echo"<h1>Welcome ".$sql2['firstname']. " </h1>"
+              echo"Welcome ".$sql2['firstname']. " "
               ?>
           </h3>
         </li>

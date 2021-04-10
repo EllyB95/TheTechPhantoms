@@ -18,13 +18,19 @@
   <section class="grid">
     <article>
       <div class="main__container">
-        <div class="main__title">
-            <div class="main__greeting">
-                  <div class="image" style="background-image: url(../images/png/AdminHomePage.png);">
+                 <div class="d-none d-md-block col-12 col-md-6 hero-image">
+                      <div class="hero-image-container">
+                          <div class="hero-image hero-image-active" style="background-image: url(images/svg/RecoveryCollege-FreeMentalHealthCourses-HeaderGraphic1.svg );">
+                          </div>
+                      </div>
                   </div>
+<<<<<<< HEAD
                   <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1200" height="265">
             </div>
             </div>
+=======
+        </div>
+>>>>>>> bc46b59221273454801f5ff091f63084636715f9
      <?php 
         /*  include_once("../php/config.php");
           include_once("../php/sql.php");*/
@@ -42,7 +48,6 @@
               $sql1 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.cmhauser;")));
               $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.courses;")));
               $sql3 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.enroll;")));
-              $sql4 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.enroll WHERE certificate_generated ='true';")));
           echo"<span class='font-bold text-title'>&nbsp;&nbsp;".$sql1['total']."</span>
         </div>
       </div>
@@ -62,13 +67,6 @@
         <div class='card_inner'>
           <p class='text-primary-p'>Total enrollment</p>
           <span class='font-bold text-title'>&nbsp;&nbsp;".$sql3['total']."</span>
-        </div>
-      </div>
-      <div class='card'>
-        
-        <div class='card_inner'>
-          <p class='text-primary-p'>Certificate Generated</p>
-          <span class='font-bold text-title'>&nbsp;&nbsp;".$sql4['total']."</span>
         </div>
       </div>
       "

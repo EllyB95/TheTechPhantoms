@@ -20,7 +20,7 @@
       <div class="main__container">
                  <div class="d-none d-md-block col-12 col-md-6 hero-image">
                       <div class="hero-image-container">
-                          <div class="hero-image hero-image-active" style="background-image: url(../images/png/AdminHomePage.png);">
+                          <div class="hero-image hero-image-active" style="background-image: url(images/svg/RecoveryCollege-FreeMentalHealthCourses-HeaderGraphic1.svg );">
                           </div>
                       </div>
                   </div>

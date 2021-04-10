@@ -35,30 +35,19 @@
 </head>
 
 <body>
-  <div class="row">
-    <div class='col-3'>
-      <header class="page-header">
-        <?php include 'LeftMenu.php'; ?>
-
-      </header>
-    </div>
-    <div class='col-9'>
-      <div id="page" class="site">
-        <div id="content" class="site-content">
-
-
-
-
-
-
-          <div id="skip-anchor" tabindex="-1"></div>
-
-
-
-
-
-          <section class="upcoming-courses">
-
+  <header class="page-header">
+  <?php include 'LeftMenu.php';?>
+</header>
+<section class="page-content">
+  <section class ="grid">
+    <article style="height: 800px">
+      <div class="main__container">
+        <div class="main__title">
+            <div class="main__greeting">
+              <h1>Student Information</h1>
+            </div>
+            
+            </div>
             <div class="container">
               <div class="row">
 
@@ -79,8 +68,9 @@
                               <div class='location-meta' data-location='online'></div>
                               <div class='tags' data-filter-target='' data-tags='online'></div>
                               <div class='card__header'>
-                                <div class='card__title title-4 tribe-events-single-event-title'>" . htmlspecialchars($sql2['course_name']) . "</div> 
-                                </div>
+                                <div class='card__title title-4 tribe-events-single-event-title'>" . htmlspecialchars($sql2['course_name']) . "
+                                </div> 
+                              </div>
 
                               <div class='card__body small'>
                               
@@ -121,8 +111,9 @@
 
               </div>
 
-              
-
+              </div>
+</div>
+</article>
           </section>
 
 

@@ -32,13 +32,7 @@
             <span class="iconify" data-icon="fluent:news-20-regular" data-inline="false"></span>
             <span>All Messages</span>
           </a>
-      </li> 
-       <li>
-        <a href="AddCertificate.php">
-            <span class="iconify" data-icon="fluent:news-20-regular" data-inline="false"></span>
-            <span>Add Certificates</span>
-          </a>
-      </li> 
+      </li>  
       <li>
         <a href="AddCourses.php">
             <span class="iconify" data-icon="fluent:news-20-regular" data-inline="false"></span>

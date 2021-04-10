@@ -48,7 +48,7 @@
           <div class="main__container">
             <div class="main__title">
               <div class="main__greeting">
-                <h2 style="margin-left: 30px;" style=" margin-bottom: 50px;">My Courses</h2>
+                <h2 style="margin-left: 30px" style="margin-top: 40px" >My Courses</h2>
               </div>
             </div>
             <div class="container" style="margin-top: 40px">

@@ -44,14 +44,14 @@
     </div>
     <div class="page-content">
       <div class="grid" style="margin-top: 30px">
-        <article style="height: 500px">
+        <article style="height: 1000px">
           <div class="main__container">
             <div class="main__title">
               <div class="main__greeting">
-                <h3>Student Information</h3>
+                <h2 style="margin-left: 30px">My Courses</h2>
               </div>
             </div>
-
+              <form  method="post">
 
                 <?php include '../config.php';?>
                 <?php
@@ -108,7 +108,7 @@
 
 
                 ?>
-
+              </form>
           </div>
         </article>
       </div>

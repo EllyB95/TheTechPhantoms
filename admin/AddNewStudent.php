@@ -49,7 +49,7 @@ pg_close($db);
     <?php include 'LeftMenu.php'; ?>
   </header>
   <section class="page-content">
-    <section class="grid">
+    <div class="grid">
       <article style="height: 800px">
         <div class="main__container">
           <div class="main__title">
@@ -129,7 +129,7 @@ pg_close($db);
     </article>
   <footer class="page-footer">
   </footer>
-</section>
+</div>
 </body>
 </head>
 </html>

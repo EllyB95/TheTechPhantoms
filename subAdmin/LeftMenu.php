@@ -4,7 +4,11 @@
     </a>   
     <ul class="admin-menu">
       <li class="menu-heading">
-        <h3>Sub Admin</h3>
+        <h3><?php include '../config.php';?>
+              <?php 
+              $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.sub_admin where email='".$EmailSubAdmin."' ;")));
+              echo"<h1>Welcome ".$sql2['first_name']. " </h1>"
+              ?></h3>
       </li>
       <li>
         <a href="SubAdminPanel.php">

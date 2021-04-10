@@ -19,14 +19,8 @@ include("userinfo_sub_admin.php");
         <div class="main__title">
             <div class="main__greeting" >
               <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1000" height="260">
-              <?php include '../config.php';?>
-              <?php 
-              $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.sub_admin where email='".$EmailSubAdmin."' ;")));
-              echo"<h1>Welcome ".$sql2['first_name']. " </h1>"
-              ?>
-              <!-- <p>Welcome to your CMHA admin dashboard</p> -->
             </div>
-            </div>
+        </div>
      <?php 
         /*  include_once("../php/config.php");
           include_once("../php/sql.php");*/

@@ -48,7 +48,12 @@
             <span>Change Password</span>
           </a>
       </li> 
-      
+      <li>
+        <a href="logout_user.php">
+            
+            <span>Sign Out</span>
+          </a>
+      </li> 
        <li>
           <a href="logout_user.php" class="btn btn-danger"><button type="button"><h4>Sign Out</h4></button>  </a>
         </li>

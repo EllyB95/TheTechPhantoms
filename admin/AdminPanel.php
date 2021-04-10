@@ -72,8 +72,8 @@ pg_close($dbconn);
     <article style="height: auto;">
       <div class="main__container">
         <div class="main__title">
-            <div class="main__greeting">
-              <img src="../images/jpg/AdminHomePage.jpg" alt="Trulli" width="900" height="230" style="align-content: center;">
+            <div class="main__greeting" style="align-content: center;">
+              <img src="../images/jpg/AdminHomePage.jpg" alt="Trulli" width="900" height="230">
               </br></br><h1>Messages</h1>
                <form  method="post">
               <table class="content-table">

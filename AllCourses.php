@@ -196,13 +196,17 @@
 																<table class='details'>
 																	<tbody>
 																		<tr>
-																			<th>Start</th>
+																			<th>Start Date</th>
 																			<td>" . htmlspecialchars($row['start_date']) . "</td>
 																		</tr>
 																		<tr>
-																			<th>End</th>
+																			<th>End Date</th>
 																			<td>" . htmlspecialchars($row['end_date']) . "</td>
 																		</tr>
+                                                                        <tr>
+                                                                            <th>Location</th>
+                                                                            <td>Online</td>
+                                                                        </tr>
 																	</tbody>
 																</table>
 															</div>

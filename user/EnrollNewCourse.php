@@ -48,19 +48,24 @@
 
 <body>
   <div class="row">
-    <div class='col-3'>
+    
       <header class="page-header">
         <?php include 'LeftMenu.php'; ?>
 
       </header>
     </div>
-    <div class='col-9'>
-      <div id="page" class="site">
-        <div id="content" class="site-content">
-          <div id="skip-anchor" tabindex="-1"></div>
-          <section class="upcoming-courses">
-            <div class="container">
+    <div class="page-content">
+      <div class="grid" style="margin-top: 50px">
+        <article style="height: auto;">
+          <div class="main__container">
+            <div class="main__title">
+              <div class="main__greeting">
+                <h2 style="margin: 30px" >My Courses</h2>
+              </div>
+            </div>
+            <div class="container" style="margin-top: 30px">
               <div class="row">
+                
                 <?php include '../config.php';?>
                 <?php
                 $sql = pg_query(sprintf("SELECT * FROM public.courses where course_id NOT IN (select course_id From public.enroll where emailaddress='".$_SESSION['EmailStudent']."');"));
@@ -127,22 +132,14 @@
                 ?>
 
             </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
 
-          </section>
-
-
-
-
-
-        </div><!-- #content -->
-
-
-
-      </div><!-- #page -->
-    </div>>
-  </div>
-
-
-</body>
 <footer class="page-footer">
 </footer>
+
+</body>
+</html>

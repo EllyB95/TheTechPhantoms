@@ -70,9 +70,9 @@ pg_close($dbconn);
 <section class="page-content">
   <section class ="grid">
     <article style="height: auto;">
-      <div class="main__container">
+      <div class="main__container" style="align-content: center;">
         <div class="main__title">
-            <div class="main__greeting" style="align-content: center;">
+            <div class="main__greeting" >
               <img src="../images/jpg/AdminHomePage.jpg" alt="Trulli" width="900" height="230">
               </br></br><h1>Messages</h1>
                <form  method="post">

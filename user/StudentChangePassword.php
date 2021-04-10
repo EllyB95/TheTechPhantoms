@@ -172,19 +172,24 @@ pg_close($dbconn);
 </head>
 
 <body>
+  <div class="row">
     
-  <header class="page-header">
-    <?php include 'LeftMenu.php'; ?>
+      <header class="page-header">
+        <?php include 'LeftMenu.php'; ?>
 
-  </header>
-  <section class="page-content">
-    <section class="grid">
-      <article style="height: 800px">
-        <div class="main__container">
-          <div class="main__title">
-            <div class="main__greeting">
-              <h1>Change Password</h1>
-              <form method="post" enctype="multipart/form-data">
+      </header>
+    </div>
+    <div class="page-content">
+      <div class="grid" style="margin-top: 50px">
+        <article style="height: auto;">
+          <div class="main__container">
+            <div class="main__title">
+              <div class="main__greeting">
+                <h2 style="margin: 30px" >My Courses</h2>
+              </div>
+            </div>
+            <div class="container" style="margin-top: 30px">
+              <div class="row">
                 <table class="content-table">
                   <thead>
                     <tr>
@@ -210,12 +215,15 @@ pg_close($dbconn);
                     </tr>
                   </tbody>
                 </table>
-              </form>
-      </article>
-      <footer class="page-footer">
-      </footer>
-    </section>
-</body>
-</head>
+             </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
 
+<footer class="page-footer">
+</footer>
+
+</body>
 </html>

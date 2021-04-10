@@ -60,12 +60,12 @@
           <div class="main__container">
             <div class="main__title">
               <div class="main__greeting">
-                <h2 style="margin: 30px" >My Courses</h2>
+                <h2 style="margin: 30px" >Courses Available to Enrol</h2>
               </div>
             </div>
             <div class="container" style="margin-top: 30px">
               <div class="row">
-                
+
                 <?php include '../config.php';?>
                 <?php
                 $sql = pg_query(sprintf("SELECT * FROM public.courses where course_id NOT IN (select course_id From public.enroll where emailaddress='".$_SESSION['EmailStudent']."');"));

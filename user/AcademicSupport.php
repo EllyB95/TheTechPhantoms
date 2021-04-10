@@ -23,14 +23,16 @@
       </header>
     </div>
     <div class="page-content">
-      <div class="grid" style="margin-top: 30px">
-        <article style="height: 500px">
+      <div class="grid" style="margin-top: 50px">
+        <article style="height: auto;">
           <div class="main__container">
             <div class="main__title">
               <div class="main__greeting">
-                <h1>Academic Support</h1>
+                <h2 style="margin: 30px" >Academic Support</h2>
               </div>
             </div>
+            <div class="container" style="margin-top: 30px">
+              <div class="row">
             <table class="content-table">
               <thead>
                 <tr>
@@ -49,12 +51,15 @@
                 </tr>
               </tbody>
             </table>
+           </div>
+            </div>
           </div>
         </article>
-      <!-- </section> -->
+      </div>
     </div>
-    </div>
-  </div>
-</body>
+
 <footer class="page-footer">
 </footer>
+
+</body>
+</html>

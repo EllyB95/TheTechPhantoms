@@ -75,21 +75,23 @@ pg_close($db);
 
 <body>
   <div class="row">
-    <div class='col-3'>
+    
       <header class="page-header">
         <?php include 'LeftMenu.php'; ?>
+
       </header>
     </div>
-    <div class='col-9'>
-      <!-- <section class="page-content"> -->
-        <section class="grid">
-          <article style="height: 900px">
-            <div class="main__container">
-              <div class="main__title">
-                <div class="main__greeting">
-                  <h1>Personal details</h1>
-                </div>
+    <div class="page-content">
+      <div class="grid" style="margin-top: 50px">
+        <article style="height: auto;">
+          <div class="main__container">
+            <div class="main__title">
+              <div class="main__greeting">
+                <h2 style="margin: 30px" >Academic Support</h2>
               </div>
+            </div>
+            <div class="container" style="margin-top: 30px">
+              <div class="row">
 
             <table class="content-table">
               <thead>
@@ -190,9 +192,15 @@ pg_close($db);
                
              </tbody>
             </table>
-      </article>
-    </section>
-  </section>
+      </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+<footer class="page-footer">
+</footer>
+
 </body>
-  <footer class="page-footer">
-  </footer>
+</html>

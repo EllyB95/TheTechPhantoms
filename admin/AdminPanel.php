@@ -3,15 +3,68 @@
 </head>
 <?php include '../config.php';?>
 <?php include 'userinfo_admin.php'; ?>
+<?php
+
+// Initialize the session
+//session_start();
+ $dbconn = pg_connect("sslmode=require sslrootcert=certificates/ca-certificate.crt host=thetechphantoms-do-user-8660169-0.b.db.ondigitalocean.com port=25060 dbname=Postgres user=CMHA password=j38mp49ya50ow9im");
+ 
+ if(isset($_POST['delete_all'])&&!empty($_POST['delete_all'])){
+    //console.log("testing1");
+    // $hashpassword = md5($_POST['password']);
+    $sql ="Delete from public.messages ";
+    $data = pg_query($dbconn,$sql); 
+   
+    if($data){ 
+      //  console.log("testing3");
+        // session_start();
+        // $_SESSION["EmailAdmin"] = $_POST['email'];
+        header('Location: show_messages.php');    
+    }else{
+        echo "<div class='alert alert-danger'>
+        <a href='#' class='close' data-dismiss='alert' aria-label='close'>Close X</a>
+        <p><strong>Alert!</strong></p>
+        Email or password wrong! Please try again!.
+    </div>'";
+    }
+}
+
+
+pg_close($dbconn); 
+
+?>
+<!DOCTYPE html>
+<html lang="en-CA" class="no-js">
+<head>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <link href='../css/studentStyle.css' rel='stylesheet' type="text/css"/>
 <link href='../css/admin_table.css' rel='stylesheet' type="text/css"/>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-<svg style="display:none;">
+<svg style="display:none;"></svg>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+  function deleteMessage(sno)
+  {
+    $.ajax({
+        type: "POST",
+        url: 'admin_ajax.php',
+        data: {
+          action: 'delete_perticular_message',
+          sno: sno
+        },
+        success: function(html) {
+          location.reload();
+        }
 
-  
-</svg>
+      });
+  }
+</script>
+</head>
 
-<header class="page-header">
+
+<body>
+
+  <header class="page-header">
   <?php include 'LeftMenu.php';?>
 </header>
 <section class="page-content">
@@ -25,83 +78,50 @@
                       </div>
                   </div>
                   <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1100" height="265">
-            </div>
-            </div>
-
-        </div>
-
-     <?php 
-        /*  include_once("../php/config.php");
-          include_once("../php/sql.php");*/
-     ?>
-    </article>
-  
-    <div class="main__cards">
-      <div class="card">
-        
-        <div class="card_inner">
-          <p class="text-primary-p">Students Enrolled</p>
-            <?php include '../config.php';?>
-            <?php
-              $sr_no = 1;
-              $sql1 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.cmhauser;")));
-              $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.courses;")));
-              $sql3 = pg_fetch_assoc(pg_query(sprintf("SELECT count(*) as total FROM public.enroll;")));
-          echo"<span class='font-bold text-title'>&nbsp;&nbsp;".$sql1['total']."</span>
-        </div>
+          <div class="main__title">
+            <div class="main__greeting">
+              <h1>Messages</h1>
+               <form  method="post">
+              <table class="content-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php include '../config.php';?>
+              <?php
+                $flag = 0;
+              $sql = pg_query(sprintf("SELECT * FROM public.messages ORDER BY sno DESC;"));
+              while ($row = pg_fetch_assoc($sql)) {
+                $flag = 1;
+                echo "<tr>";
+                echo "<td>" . htmlspecialchars($row['name']) . " </td>";
+                echo "<td>" . htmlspecialchars($row['email']) . " </td>";
+                echo "<td>" . htmlspecialchars($row['message']) . " </td>";
+                echo "<td><button id='".$row['sno']."' onclick='deleteMessage(this.id)'>Delete</button></td>";
+                echo "</tr>";
+              }
+              pg_close($db); ?>
+            </tbody>
+            <tr>
+              <?php
+                if($flag==1)
+                echo"<th colspan='4'><input type='submit' class='btn btn-primary' name='delete_all' value='Delete All'></th>";
+              else
+                echo"<th colspan='4'>No Message</th>";
+                ?>
+                
+              </tr>
+          </table>
+        </form>
       </div>
-
-      
-
-      <div class='card'>
-        
-        <div class='card_inner'>
-          <p class='text-primary-p'>Courses Available</p>
-          <span class='font-bold text-title'>&nbsp;&nbsp;".$sql2['total']."</span>
-        </div>
-      </div>
-
-      <div class='card'>
-        
-        <div class='card_inner'>
-          <p class='text-primary-p'>Total enrollment</p>
-          <span class='font-bold text-title'>&nbsp;&nbsp;".$sql3['total']."</span>
-        </div>
-      </div>
-      "
-
-     
-
-        
-          ?>
-        
-     
     </div>
-  </section>
-  <footer class="page-footer">
-  </footer>
-</section>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            </div>
+           
 
-<script type="text/javascript">
-// Load google charts
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-// Draw the chart and set the chart values
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Courses', 'Hours per Day'],
-  ['Courses Enrolled', <?php echo $coursenumber; ?>],
-  ['Courses in progress', 2],
-  ['Courses Completed', 4]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'CMHA Courses', 'width':550, 'height':300};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-}
-</script>
+  
+    </article>

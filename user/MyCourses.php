@@ -34,7 +34,6 @@
   </script>
 </head>
 
-<body>
   <header class="page-header">
   <?php include 'LeftMenu.php';?>
 </header>
@@ -130,6 +129,5 @@
   </div>
 
 
-</body>
 <footer class="page-footer">
 </footer>

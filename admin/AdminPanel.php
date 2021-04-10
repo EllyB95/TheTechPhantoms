@@ -69,7 +69,7 @@ pg_close($dbconn);
 </header>
 <section class="page-content">
   <section class ="grid">
-    <article style="height: 800px">
+    <article style="height: auto;">
       <div class="main__container">
         <div class="main__title">
             <div class="main__greeting">

@@ -73,7 +73,7 @@ pg_close($dbconn);
       <div class="main__container" style="align-items: center;">
         <div class="main__title">
             <div class="main__greeting" >
-              <img src="../images/jpg/AdminHomePage.jpg" alt="Trulli" width="900" height="230">
+              <img src="../images/png/MentalHealthForAll.png" alt="Trulli" width="1000" height="260">
               </br></br><h1>Messages</h1>
                <form  method="post">
               <table class="content-table">

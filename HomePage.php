@@ -361,7 +361,7 @@
 							<div class="card card-view-all">
 								<div class="card-view-all__body">
 									<h3>Courses</h3>
-									<button class="button" id="viewAllCourses" onclick="ShowAllCourses()">View All Courses</button>
+									<a href="AllCourses.php" title="ViewAllCourses" class="button button">View All Courses</a>
 								</div>
 							</div>
 						</div>

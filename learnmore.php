@@ -143,7 +143,7 @@
                                 </div>
                             
                                 <div class="course-hero-content">
-                                    <p><h3>
+                                    <p><h3 style="color: white;">
                                     <?php include '../config.php';?>    
                                     <?php
                                                 $course_id = $_GET['course_id'];

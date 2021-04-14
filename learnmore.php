@@ -161,13 +161,7 @@
             </div>
 
 
-            <section class="intro" id="intro-frontpage">
-
-				<div class="brush-stroke brush-stroke-top" style="background-image: url(images/svg/white-top.svg);"></div>
-                
-				<div class="brush-stroke brush-stroke-bottom" style="background-image: url(images/svg/white-top.svg);"></div>
-
-			</section>
+            
         <section class="cta">
 
         <div class="brush-stroke brush-stroke-top" style="background-image: url(images/svg/dark-top.svg);"></div>

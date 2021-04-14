@@ -42,23 +42,23 @@
                             $sql3 = pg_query(sprintf("SELECT * FROM public.course_specific_data where course_id ='" . $_GET['course_id'] . "';"));
                             echo "
               <tr>
-                <td>Course Name :</td>
+                <td>Course Name:</td>
                 <td>" . $sql['course_name'] . "</td>
                </tr>
                <tr>
-                <td>Start Date :</td>
+                <td>Start Date:</td>
                 <td>" . $sql['start_date'] . "</td>
                </tr>
                <tr>
-                <td>End Date :</td>
+                <td>End Date:</td>
                 <td>" . $sql['end_date'] . "</td>
                </tr>
                <tr>
-                <td>Description :</td>
+                <td>Description:</td>
                 <td>" . $sql['description'] . "</td>
                </tr>
                <tr>
-                <td>Course Data :</td>
+                <td>Course Data:</td>
                 <td>";
                     while($row=pg_fetch_assoc($sql3)){
                         echo "<a href='../admin/uploads/" . $row['course_data'] . "'>" . $row['course_data'] . "</a>";

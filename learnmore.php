@@ -130,16 +130,15 @@
                                 <div class="course-hero-top">
 
                                     <div class="course-image-title">
-                                        <div class="course-hero-image">
-                                            <h1 class="title-2" style="color: white;">
-                                                <?php include 'config.php';?>
-                                                <?php
-                                                    $course_id = $_GET['course_id'];
-                                                    $sql = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.courses where course_id=".$course_id)));
-                                                    echo $sql['course_name'];
-                                                ?>
-                                            </h1>
-                                        </div>
+                                        </br></br>
+                                        <h1 class="title-2" style="color: white;">
+                                            <?php include 'config.php';?>
+                                            <?php
+                                                $course_id = $_GET['course_id'];
+                                                $sql = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.courses where course_id=".$course_id)));
+                                                echo $sql['course_name'];
+                                            ?>
+                                        </h1>
                                     </div>
                                 </div>
                             

@@ -46,14 +46,6 @@
                 <td>" . $sql['course_name'] . "</td>
                </tr>
                <tr>
-                <td>Course Id :</td>
-                <td>" . $sql['course_id'] . "</td>
-               </tr>
-               <tr>
-                <td>Owner Email :</td>
-                <td>" . $sql['owner_email'] . "</td>
-               </tr>
-               <tr>
                 <td>Start Date :</td>
                 <td>" . $sql['start_date'] . "</td>
                </tr>

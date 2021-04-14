@@ -223,7 +223,6 @@ The content from cdnjs.cloudflare.com is all open source -->
                             <input type="submit" class="btn btn-primary" name="login" value="login" target="_blank">
                         </div>
                         <p>Don't have an account? <a href="../AddNewStudentNew.php">Sign up now</a>.</p>
-                        <p>Forgot Your Password? <a href="StudentResetPassword.php">Reset Now</a>.</p>
                     </form>
                 </div>
             </div>

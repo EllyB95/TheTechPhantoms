@@ -125,12 +125,12 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-12">
+                        <div class="col-12" style="margin-top: 30px;">
                             <div class="course-hero">
                                 <div class="course-hero-top">
 
                                     <div class="course-image-title">
-                                        </br></br>
+                                
                                         <h1 class="title-2" style="color: white;">
                                             <?php include 'config.php';?>
                                             <?php

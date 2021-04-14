@@ -177,46 +177,115 @@
 
                         <?php include 'config.php';?>
                         <?php
-                        $sql = pg_query(sprintf("SELECT * FROM public.courses"));
+
+                        $string = exec('getmac');
+                        $mac = substr($string, 0, 17);
+                        $sql = pg_query(sprintf("SELECT * FROM public.courses where course_id NOT IN (SELECT course_id from cart where emailaddress='" . $mac . "')"));
+                        $count = 0;
 
                         while ($row = pg_fetch_assoc($sql)) {
+                            $count = $count + 1;
 
-                            echo "
-													<div class='col-12 col-md-6 card-container'>
-														<div id='tribe-event-content--5068' class='card tribe-events-single events-single-card' data-filter-container=''>
-															<div class='location-meta' data-location='online'></div>
-															<div class='tags' data-filter-target='' data-tags='online'></div>
-															<div class='card__header'>
-																<div class='card__title title-4 tribe-events-single-event-title'>" . htmlspecialchars($row['course_name']) . "</div>	
-																</div>
+                            if ($count > 3) {
 
-															<div class='card__body small'>
-															
+                                echo "
+                                                    <div class='col-12 col-md-6 card-container extra' id='display_functionality' style='display:none'>
+                                                        <div id='tribe-event-content--5068' class='card tribe-events-single events-single-card' data-filter-container=''>
+                                                            <div class='location-meta' data-location='online'></div>
+                                                            <div class='tags' data-filter-target='' data-tags='online'></div>
+                                                            <div class='card__header'>
+                                                                <div class='card__title title-4 tribe-events-single-event-title'>" . htmlspecialchars($row['course_name']) . "</div>    
+                                                                </div>
 
-																<table class='details'>
-																	<tbody>
-																		<tr>
-																			<th>Start Date</th>
-																			<td>" . htmlspecialchars($row['start_date']) . "</td>
-																		</tr>
-																		<tr>
-																			<th>End Date</th>
-																			<td>" . htmlspecialchars($row['end_date']) . "</td>
-																		</tr>
+                                                            <div class='card__body small'>
+                                                            
+
+                                                                <table class='details'>
+                                                                    <tbody>
                                                                         <tr>
-                                                                            <th>Location</th>
-                                                                            <td>Online</td>
+                                                                            <th>Start</th>
+                                                                            <td>" . htmlspecialchars($row['start_date']) . "</td>
                                                                         </tr>
-																	</tbody>
-																</table>
-															</div>
+                                                                        <tr>
+                                                                            <th>End</th>
+                                                                            <td>" . htmlspecialchars($row['end_date']) . "</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
 
-															<div class='card__footer'>
-																<button class='add-to-cart button--plus button--online' data-download-id='".$row['course_id']."' data-event-id='".$row['course_id']."' data-title='".$row['course_name']."' data-schedule='[{&quot;start&quot;:&quot;2020-12-10T10:00:00-0700&quot;,&quot;end&quot;:&quot;2020-12-10T11:00:00-0700&quot;}]' data-tag='online' data-nice-date='December 10 2020, 10:00 am - 11:00 am MDT' data-sessions='1'>Add to Cart</button>
-																<a href='learnmore.php?course_id=" . $row['course_id'] . "' class='button button--secondary'>Learn More</a>
-															</div>
-														</div><!-- #tribe-events-content -->
-													</div>";
+                                                            <div class='card__footer'>";
+
+
+
+                                if($row['currently_enrolled']<$row['capacity'])
+                                {
+                                echo "<button class='add-to-cart button--plus button--online' id='" . $row['course_id'] . "' onclick='addToCart(this.id)'>Add to Cart</button>
+                                                        <a href='learnmore.php?course_id=" . $row['course_id'] . "' class='button button--secondary'>Learn More</a>
+                                                            </div>
+                                                        </div><!-- #tribe-events-content -->
+                                                    </div>";
+                                }
+                                else
+                                {
+                                    echo "<button class='btn btn-secondary' id='" . $row['course_id'] . "' onclick='addToCart(this.id) disabled'>Class Full</button>
+                                    <a href='learnmore.php?course_id=" . $row['course_id'] . "' class='button button--secondary'>Learn More</a>
+                                        </div>
+                                    </div><!-- #tribe-events-content -->
+                                </div>";
+                                }
+                            } else {
+                                echo "
+                                <div class='col-12 col-md-6 card-container'>
+                                    <div id='tribe-event-content--5068' class='card tribe-events-single events-single-card' data-filter-container=''>
+                                        <div class='location-meta' data-location='online'></div>
+                                        <div class='tags' data-filter-target='' data-tags='online'></div>
+                                        <div class='card__header'>
+                                            <div class='card__title title-4 tribe-events-single-event-title'>" . htmlspecialchars($row['course_name']) . "</div>    
+                                            </div>
+
+                                        <div class='card__body small'>
+                                        
+
+                                            <table class='details'>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Start Date</th>
+                                                        <td>" . htmlspecialchars($row['start_date']) . "</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>End Date</th>
+                                                        <td>" . htmlspecialchars($row['end_date']) . "</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Location</th>
+                                                        <td>Online</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class='card__footer'>";
+
+                                
+                                        if($row['currently_enrolled']<$row['capacity'])
+                                        {
+
+                                echo "<button class='add-to-cart button--plus button--online' id='" . $row['course_id'] . "' onclick='addToCart(this.id)'>Add to Cart</button>";
+                                echo "                                  <a href='learnmore.php?course_id=" . $row['course_id'] . "' class='button button--secondary'>Learn More</a>
+                                        </div>
+                                    </div><!-- #tribe-events-content -->
+                                </div>";
+                                        }
+                                        else
+                                        {
+                                            echo "<button class='btn btn-secondary' id='" . $row['course_id'] . "' onclick='addToCart(this.id) disabled'>Class Full</button>";
+                                echo "                                  <a href='learnmore.php?course_id=" . $row['course_id'] . "' class='button button--secondary'>Learn More</a>
+                                        </div>
+                                    </div><!-- #tribe-events-content -->
+                                </div>";
+                                        }
+                            }
                         }
 
                         ?>

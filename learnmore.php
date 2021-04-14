@@ -143,14 +143,14 @@
                                 </div>
                             
                                 <div class="course-hero-content">
-                                    <p><h3 style="color: white;">
+                                    <p><h4 style="color: white;">
                                     <?php include '../config.php';?>    
                                     <?php
                                                 $course_id = $_GET['course_id'];
                                                 $sql = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.courses where course_id=".$course_id)));
                                                 echo $sql['description'];
                                             ?>
-                                    </h3></p>
+                                    </h4></p>
                                 </div>
                             </div>
                         </div>

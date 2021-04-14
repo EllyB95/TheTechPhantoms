@@ -17,6 +17,7 @@ if (isset($_POST['update']) && !empty($_POST['update'])) {
     $ret = pg_query($sql);
     if ($ret) {
       echo '<script>alert("Course Updated Successfully")</script>';
+      header('Location: CourseInformation.php');
     } else {
       echo "Something Went Wrong";
     }

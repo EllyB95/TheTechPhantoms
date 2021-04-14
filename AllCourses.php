@@ -291,8 +291,7 @@
                         ?>
 
                         <div class="col-12">
-                            <p>If you require any help registering for courses please call us at <a href="tel:780-414-6300">780-414-6300</a> or email us at <a href="CALENDARPAGEPLACEHOLDER">recoverycollege@cmha-edmonton.ab.ca</a>
-                                <!--https://recoverycollegeedmonton.ca/events/-->.
+                            <p>If you require any help registering for courses please call us at <b>780-414-6300</b> or email us at <b>recoverycollege@cmha-edmonton.ab.ca.</b>
                             </p>
                         </div>
 

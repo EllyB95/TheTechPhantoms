@@ -130,13 +130,7 @@
                                 <div class="course-hero-top">
 
                                     <div class="course-image-title">
-                                        <div class="course-hero-image">
-                                            <div class="responsive-background ">
-                                                <div class="image-controller d-block">
-                                                    <div class="image" style="background-image: url(https://recoverycollegeedmonton.ca/wp-content/uploads/sites/3/2020/04/RC-RethinkingOurThoughts.png);"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <h1 class="title-2" style="color: white;">
                                             <?php include 'config.php';?>
                                             <?php

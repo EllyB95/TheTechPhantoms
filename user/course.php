@@ -75,13 +75,13 @@
                </tr>
                <tr>";
                             $sql2 = pg_fetch_assoc(pg_query(sprintf("SELECT * FROM public.enroll where course_id ='" . $_GET['course_id'] . "' AND emailaddress='".$_SESSION['EmailStudent']."';")));
-                            $status = $sql2['completed'] === 'f';
-                            if ($status) {
-                                echo "<td><button id='" . $sql['course_id'] . "' value='" . $_SESSION['EmailStudent'] . "' class='btn btn-primary'>Completed</button></td>";
+                       //     $status = $sql2['completed'] === 'f';
+                           // if ($status) {
+                             //   echo "<td><button id='" . $sql['course_id'] . "' value='" . $_SESSION['EmailStudent'] . "' class='btn btn-primary'>Completed</button></td>";
                                 // echo "<td><form><input name='accept' type='submit' id='".$row['course_id']."' value='".$row['emailaddress']."'></td></form>";
-                            } else
-                                echo "<td>Already Completed</td>";
-                            echo "</tr>";
+                           // } else
+                             //   echo "<td>Already Completed</td>";
+                           // echo "</tr>";
 
                             pg_close($db);
 

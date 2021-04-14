@@ -1,6 +1,6 @@
 
 <nav>
-      <a href="MyCourses.php">
+      <a href="EnrollNewCourse.php">
         <img class="logo" src="../images/png/cropped-RecoveryCollege_Favicon-180x180.png" alt="Recovery College logo">
       </a>   
       <ul class="admin-menu">

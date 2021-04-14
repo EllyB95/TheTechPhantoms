@@ -19,7 +19,7 @@
       //  console.log("testing3");
         // session_start();
         // $_SESSION["EmailAdmin"] = $_POST['email'];
-        header('Location: show_messages.php');    
+        header('Location: AdminPanel.php');    
     }else{
         echo "<div class='alert alert-danger'>
         <a href='#' class='close' data-dismiss='alert' aria-label='close'>Close X</a>

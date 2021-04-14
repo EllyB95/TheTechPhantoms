@@ -164,7 +164,6 @@
             
         <section class="cta">
 
-        <div class="brush-stroke brush-stroke-top" style="background-image: url(images/svg/dark-top.svg);"></div>
 
         <div class="container">
             <div class="row">

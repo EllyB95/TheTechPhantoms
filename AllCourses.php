@@ -186,7 +186,7 @@
                         while ($row = pg_fetch_assoc($sql)) {
                             $count = $count + 1;
 
-                            if ($count > 3) {
+                            
 
                                 echo "
                                                     <div class='col-12 col-md-6 card-container extra' id='display_functionality' style='display:none'>
@@ -285,7 +285,7 @@
                                     </div><!-- #tribe-events-content -->
                                 </div>";
                                         }
-                            }
+                            
                         }
 
                         ?>
